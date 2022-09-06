@@ -1,0 +1,3061 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0090FF">
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <title>Pancernik Statystyki</title>
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/onoloilfmbomfgdalcbbpnlnhibneofa">
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/pancernik/css/pancernik.css" rel="stylesheet">
+    <link href="/style-watch.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/js/bootstrap-datetimepicker.css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-jFSKtW5GA3kS9GVsQR+4Ih/7VfiOpMRm6DpnNNG9yfcdtusvmPoXrxdvp/vzlKrg"></script><script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/highstock.js"></script>
+    <script src="/js/highcharts.theme.js"></script>
+    <script src="/js/moment-with-locales.min.js"></script>
+    <script src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/js/pancernik.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><i class="icon-pancernik"></i> Statystyki</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Statystyki</a>
+                    </li>
+                    <li class="active">
+                        <a href="/logs">Archiwum</a>
+                    </li>
+                    <li>
+                        <a href="/karma">Karma</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://pancernik.info">Watch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="page-header">
+                <h3><i class="fa fa-calendar-o"></i> 2022-04-18</h3>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2022-04-17" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2022-04-18/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2022-04-18/4">4</a></li>
+                        <li><a href="/log/2022-04-18/5">5</a></li>
+                        <li><a href="/log/2022-04-18/6">6</a></li>
+                        <li><a href="/log/2022-04-18/7">7</a></li>
+                        <li class="active"><a href="/log/2022-04-18/8">8</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2022-04-19" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered" style="word-wrap: break-word;">
+                    <colgroup>
+                        <col style="width: 73px;">
+                        <col style="width: 188px;">
+                        <col style="width: auto">
+                    </colgroup>
+                    <tbody><tr>
+                      <td class="time"><a href="#6e46f2" id="6e46f2">05:39:42</a></td>
+                      <td colspan="2">Parts: Paprika</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#863ee5" id="863ee5">05:23:53</a></td>
+                      <td colspan="2">* <strong>Dzien_Dobry</strong> PepeSleeper :zzz: Bedge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#772878" id="772878">05:08:09</a></td>
+                      <td colspan="2">Parts: Flashovy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#53abc0" id="53abc0">04:55:07</a></td>
+                      <td colspan="2">Parts: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#eb66aa" id="eb66aa">04:55:00</a></td>
+                      <td colspan="2">Parts: gizmoseb</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cbebe3" id="cbebe3">04:54:58</a></td>
+                      <td colspan="2">Joins: gizmoseb</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#92f19f" id="92f19f">04:54:32</a></td>
+                      <td colspan="2">akita.poorchat.net sets mode: +v vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#92f19f" id="92f19f">04:54:32</a></td>
+                      <td colspan="2">Joins: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#92f19f" id="92f19f">04:54:32</a></td>
+                      <td colspan="2">Parts: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e552ca" id="e552ca">04:54:23</a></td>
+                      <td colspan="2">dachshund.poorchat.net sets mode: +v vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e552ca" id="e552ca">04:54:23</a></td>
+                      <td colspan="2">Joins: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#337c3c" id="337c3c">04:49:55</a></td>
+                      <td colspan="2">Parts: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f77fc1" id="f77fc1">04:48:39</a></td>
+                      <td colspan="2">Parts: 0sad1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#80e632" id="80e632">04:48:20</a></td>
+                      <td colspan="2">Joins: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d55e36" id="d55e36">04:48:02</a></td>
+                      <td colspan="2">Parts: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3ae67d" id="3ae67d">04:47:10</a></td>
+                      <td colspan="2">Parts: zhreddek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b60849" id="b60849">04:43:55</a></td>
+                      <td class="text-right"><strong>MegicPotato</strong></td>
+                      <td>trashD </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#555974" id="555974">04:43:15</a></td>
+                      <td class="text-right"><strong>0sad1</strong></td>
+                      <td>YEPYEPYEP </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cad170" id="cad170">04:43:02</a></td>
+                      <td colspan="2">Joins: 0sad1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8d7f2f" id="8d7f2f">04:43:01</a></td>
+                      <td colspan="2">Parts: 0sad1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7532dc" id="7532dc">04:42:54</a></td>
+                      <td colspan="2">Joins: 0sad1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#88ef7f" id="88ef7f">04:37:50</a></td>
+                      <td colspan="2">Joins: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#71baa8" id="71baa8">04:37:18</a></td>
+                      <td colspan="2">Parts: Testy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6f7a9e" id="6f7a9e">04:35:24</a></td>
+                      <td colspan="2">Parts: 0sad1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3aedcb" id="3aedcb">04:32:23</a></td>
+                      <td colspan="2">Parts: IdreamofaJeannie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#76a210" id="76a210">04:32:16</a></td>
+                      <td colspan="2">Joins: IdreamofaJeannie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8a93fd" id="8a93fd">04:29:47</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Susge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3575df" id="3575df">04:29:06</a></td>
+                      <td class="text-right"><strong>Dzien_Dobry</strong></td>
+                      <td>Susge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ffdb0a" id="ffdb0a">04:28:14</a></td>
+                      <td colspan="2">Joins: 0sad1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a35c85" id="a35c85">04:27:18</a></td>
+                      <td colspan="2">Parts: IdreamofaJeannie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1ad687" id="1ad687">04:25:58</a></td>
+                      <td colspan="2">Parts: RychuPiejo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dcf4d8" id="dcf4d8">04:24:19</a></td>
+                      <td colspan="2">Parts: elemele</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b66d20" id="b66d20">04:22:46</a></td>
+                      <td colspan="2">Parts: strejlok2800</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0ef4aa" id="0ef4aa">04:22:45</a></td>
+                      <td colspan="2">Joins: strejlok2800</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1646ee" id="1646ee">04:13:16</a></td>
+                      <td colspan="2">Parts: okienko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d8552c" id="d8552c">04:04:39</a></td>
+                      <td colspan="2">Joins: elemele</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f725b8" id="f725b8">03:58:39</a></td>
+                      <td colspan="2">Parts: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fea6e7" id="fea6e7">03:58:37</a></td>
+                      <td colspan="2">Joins: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#684a83" id="684a83">03:53:47</a></td>
+                      <td colspan="2">Parts: XavrasWyzryn</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f6cc60" id="f6cc60">03:48:56</a></td>
+                      <td colspan="2">Parts: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9aed51" id="9aed51">03:48:54</a></td>
+                      <td colspan="2">Joins: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f388a8" id="f388a8">03:42:11</a></td>
+                      <td colspan="2">Parts: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cfb23d" id="cfb23d">03:42:09</a></td>
+                      <td colspan="2">Joins: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9d1c41" id="9d1c41">03:41:57</a></td>
+                      <td colspan="2">Parts: OgladamFilm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1c9be4" id="1c9be4">03:41:41</a></td>
+                      <td colspan="2">Joins: Testy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b14b22" id="b14b22">03:40:19</a></td>
+                      <td colspan="2">Parts: Testy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e044b1" id="e044b1">03:35:51</a></td>
+                      <td colspan="2">Joins: Karasinio</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#da49b7" id="da49b7">03:33:20</a></td>
+                      <td colspan="2">Parts: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4efff1" id="4efff1">03:33:18</a></td>
+                      <td colspan="2">Joins: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#204033" id="204033">03:31:47</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8ce70a" id="8ce70a">03:29:47</a></td>
+                      <td colspan="2">Joins: OgladamFilm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f2421c" id="f2421c">03:29:35</a></td>
+                      <td colspan="2">Parts: Karasinio</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3df90d" id="3df90d">03:29:06</a></td>
+                      <td colspan="2">Joins: zhreddek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e5e673" id="e5e673">03:28:37</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#47793f" id="47793f">03:25:39</a></td>
+                      <td colspan="2">Parts: kazek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#842a94" id="842a94">03:22:59</a></td>
+                      <td colspan="2">Joins: spawn229</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d7e35d" id="d7e35d">03:22:49</a></td>
+                      <td colspan="2">Parts: zhreddek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7cc5f1" id="7cc5f1">03:19:25</a></td>
+                      <td colspan="2">Joins: Karasinio</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#39acdd" id="39acdd">03:16:22</a></td>
+                      <td colspan="2">Parts: brownbread</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b0d0d6" id="b0d0d6">03:15:53</a></td>
+                      <td colspan="2">Parts: spawn229</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b59eb9" id="b59eb9">03:13:57</a></td>
+                      <td colspan="2">Parts: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#497247" id="497247">03:13:54</a></td>
+                      <td colspan="2">Joins: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bca58d" id="bca58d">03:13:09</a></td>
+                      <td colspan="2">Parts: Karasinio</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#83267c" id="83267c">03:12:33</a></td>
+                      <td colspan="2">Parts: siewca</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3d5e46" id="3d5e46">03:12:31</a></td>
+                      <td colspan="2">Joins: siewca</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b70b76" id="b70b76">03:12:21</a></td>
+                      <td colspan="2">Parts: elemele</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dafcd2" id="dafcd2">03:11:59</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#af5136" id="af5136">03:08:43</a></td>
+                      <td colspan="2">Joins: spawn229</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b66b68" id="b66b68">03:06:49</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3f4e3f" id="3f4e3f">03:05:45</a></td>
+                      <td colspan="2">Parts: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dc11e3" id="dc11e3">03:04:53</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dc11e3" id="dc11e3">03:04:53</a></td>
+                      <td colspan="2">Parts: Hudraulik</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dc11e3" id="dc11e3">03:04:53</a></td>
+                      <td colspan="2">Joins: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5cff6a" id="5cff6a">03:04:09</a></td>
+                      <td colspan="2">dachshund.poorchat.net sets mode: +v Hudraulik</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5cff6a" id="5cff6a">03:04:09</a></td>
+                      <td colspan="2">Joins: Hudraulik</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e9ab71" id="e9ab71">03:03:10</a></td>
+                      <td colspan="2">Parts: Doirin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#50ff6e" id="50ff6e">03:02:43</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#de1bcf" id="de1bcf">03:02:41</a></td>
+                      <td colspan="2">Joins: XavrasWyzryn</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#34123d" id="34123d">03:02:32</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#638fa3" id="638fa3">03:02:29</a></td>
+                      <td colspan="2">Parts: XavrasWyzryn</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2edda3" id="2edda3">03:02:28</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a95671" id="a95671">03:02:26</a></td>
+                      <td colspan="2">Parts: spawn229</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#61cf78" id="61cf78">03:01:52</a></td>
+                      <td colspan="2">Parts: ZiobroXfire</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c5d11f" id="c5d11f">02:59:18</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#93538d" id="93538d">02:58:39</a></td>
+                      <td colspan="2">Joins: zhreddek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2ab336" id="2ab336">02:56:44</a></td>
+                      <td colspan="2">Parts: OgladamFilm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#97c418" id="97c418">02:56:25</a></td>
+                      <td colspan="2">Joins: OgladamFilm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f7f07d" id="f7f07d">02:54:08</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2f91c3" id="2f91c3">02:53:38</a></td>
+                      <td colspan="2">Parts: mcj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d71f48" id="d71f48">02:51:37</a></td>
+                      <td colspan="2">Parts: zhreddek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#be3b4c" id="be3b4c">02:51:12</a></td>
+                      <td colspan="2">Parts: Aleis12</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#97f0f3" id="97f0f3">02:51:03</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9216c6" id="9216c6">02:50:40</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ad893d" id="ad893d">02:50:35</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8952f2" id="8952f2">02:50:31</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#320cf2" id="320cf2">02:49:11</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>ActionBen </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9ecfc6" id="9ecfc6">02:48:50</a></td>
+                      <td colspan="2">Joins: mcj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#933557" id="933557">02:47:40</a></td>
+                      <td colspan="2">Parts: zasz82</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2554cf" id="2554cf">02:47:38</a></td>
+                      <td colspan="2">Joins: zasz82</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4ed1f2" id="4ed1f2">02:47:34</a></td>
+                      <td colspan="2">Parts: zasz82</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7ef3ae" id="7ef3ae">02:47:22</a></td>
+                      <td colspan="2">Joins: zasz82</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4d9c24" id="4d9c24">02:41:37</a></td>
+                      <td class="text-right"><strong>ZiobroXfire</strong></td>
+                      <td>EDMusic catJAM EDMusic </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2c4ea7" id="2c4ea7">02:41:28</a></td>
+                      <td colspan="2">Parts: Max2montana</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d6cb53" id="d6cb53">02:40:56</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b9ad03" id="b9ad03">02:40:50</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c55eea" id="c55eea">02:38:04</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1ff0f1" id="1ff0f1">02:36:43</a></td>
+                      <td colspan="2">Parts: Mensberk</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8be2be" id="8be2be">02:32:27</a></td>
+                      <td colspan="2">Joins: zhreddek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#98bec0" id="98bec0">02:31:51</a></td>
+                      <td colspan="2">Parts: KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b8fab7" id="b8fab7">02:31:11</a></td>
+                      <td class="text-right"><strong>lasiu</strong></td>
+                      <td>kazek, grzegorzlaser ogląda pewnie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#edfbfa" id="edfbfa">02:29:31</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#80d8ed" id="80d8ed">02:29:16</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#076ccc" id="076ccc">02:29:10</a></td>
+                      <td colspan="2">Parts: Parton</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#61c2d9" id="61c2d9">02:28:09</a></td>
+                      <td colspan="2">Joins: Parton</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b93484" id="b93484">02:28:04</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>hard kandy ma fanów tutaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#37daa8" id="37daa8">02:26:13</a></td>
+                      <td colspan="2">Parts: TheNerwujacy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0f9b41" id="0f9b41">02:26:10</a></td>
+                      <td colspan="2">Parts: zhreddek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#08561a" id="08561a">02:26:07</a></td>
+                      <td colspan="2">Parts: OgladamFilm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f7526f" id="f7526f">02:25:02</a></td>
+                      <td colspan="2">Joins: OgladamFilm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0e6adf" id="0e6adf">02:23:58</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3eee2f" id="3eee2f">02:23:14</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>Feels </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e35eff" id="e35eff">02:23:10</a></td>
+                      <td colspan="2">Parts: Gisio</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#667d5e" id="667d5e">02:23:07</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a2a75e" id="a2a75e">02:22:46</a></td>
+                      <td colspan="2">Parts: Wapniak</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b4cb17" id="b4cb17">02:21:46</a></td>
+                      <td colspan="2">Joins: robert357</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1a6358" id="1a6358">02:21:32</a></td>
+                      <td colspan="2">Parts: robert357</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d3d8fc" id="d3d8fc">02:19:47</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f0b105" id="f0b105">02:18:41</a></td>
+                      <td colspan="2">husky.poorchat.net sets mode: +v KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f0b105" id="f0b105">02:18:41</a></td>
+                      <td colspan="2">Joins: KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1e0e43" id="1e0e43">02:15:32</a></td>
+                      <td colspan="2">Parts: Larson</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c36f0b" id="c36f0b">02:15:27</a></td>
+                      <td colspan="2">Joins: Larson</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#edb1d6" id="edb1d6">02:13:12</a></td>
+                      <td colspan="2">Parts: Softjoe88</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8f0df4" id="8f0df4">02:13:00</a></td>
+                      <td colspan="2">Parts: KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a978bf" id="a978bf">02:12:38</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bd263c" id="bd263c">02:12:36</a></td>
+                      <td colspan="2">Parts: kendzior333</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fda8a7" id="fda8a7">02:11:26</a></td>
+                      <td colspan="2">Parts: Zygzak191</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#11070a" id="11070a">02:11:23</a></td>
+                      <td colspan="2">Joins: Zygzak191</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#db7311" id="db7311">02:10:32</a></td>
+                      <td colspan="2">Parts: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#df7645" id="df7645">02:10:31</a></td>
+                      <td colspan="2">Joins: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f1da24" id="f1da24">02:09:04</a></td>
+                      <td colspan="2">Parts: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#878381" id="878381">02:08:46</a></td>
+                      <td colspan="2">Joins: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#20505c" id="20505c">02:07:58</a></td>
+                      <td class="text-right"><strong>ZiobroXfire</strong></td>
+                      <td>catJAM </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6fd771" id="6fd771">02:07:56</a></td>
+                      <td colspan="2">Parts: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d5469b" id="d5469b">02:07:52</a></td>
+                      <td colspan="2">Joins: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ccbb7e" id="ccbb7e">02:07:23</a></td>
+                      <td colspan="2">Parts: trasek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5a6bbb" id="5a6bbb">02:05:56</a></td>
+                      <td colspan="2">Joins: Mensberk</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2e8bf2" id="2e8bf2">02:05:53</a></td>
+                      <td colspan="2">Parts: Mensberk</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3503ad" id="3503ad">02:05:34</a></td>
+                      <td colspan="2">Parts: Xibron</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#88d1ba" id="88d1ba">02:04:50</a></td>
+                      <td colspan="2">Parts: Ranx</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5645f4" id="5645f4">02:04:48</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a088ed" id="a088ed">02:03:54</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>na łóżku </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#210fc6" id="210fc6">02:03:44</a></td>
+                      <td class="text-right"><strong>ZiobroXfire</strong></td>
+                      <td>a po co to Panu Hmmm </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#58dbd8" id="58dbd8">02:03:19</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>gdzie jestescie?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5d68d9" id="5d68d9">02:02:54</a></td>
+                      <td colspan="2">Parts: RGB47</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#27c56f" id="27c56f">02:02:50</a></td>
+                      <td colspan="2">akita.poorchat.net sets mode: +v KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#27c56f" id="27c56f">02:02:50</a></td>
+                      <td colspan="2">Joins: KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7f4a18" id="7f4a18">02:02:49</a></td>
+                      <td colspan="2">Parts: KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9bb907" id="9bb907">02:02:17</a></td>
+                      <td colspan="2">Parts: Dekejpsz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7647e9" id="7647e9">02:02:05</a></td>
+                      <td colspan="2">Parts: Azowsky</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#be00a5" id="be00a5">02:00:59</a></td>
+                      <td colspan="2">Parts: Hitmynka</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f790e0" id="f790e0">02:00:54</a></td>
+                      <td colspan="2">Joins: Hitmynka</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#81f080" id="81f080">02:00:47</a></td>
+                      <td colspan="2">Parts: merkava</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b9b89b" id="b9b89b">01:59:28</a></td>
+                      <td colspan="2">corgi.poorchat.net sets mode: +v KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b9b89b" id="b9b89b">01:59:28</a></td>
+                      <td colspan="2">Joins: KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#37db94" id="37db94">01:59:16</a></td>
+                      <td colspan="2">Parts: rat</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#df7fc7" id="df7fc7">01:59:11</a></td>
+                      <td colspan="2">Joins: rat</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e29317" id="e29317">01:58:39</a></td>
+                      <td colspan="2">Joins: ZiobroXfire</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bb00f2" id="bb00f2">01:58:38</a></td>
+                      <td colspan="2">Parts: ZiobroXfire</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a42f33" id="a42f33">01:58:07</a></td>
+                      <td colspan="2">Parts: Slannesh</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#40160e" id="40160e">01:58:04</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9df1bb" id="9df1bb">01:57:54</a></td>
+                      <td colspan="2">Parts: Matthiasbream</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#819d11" id="819d11">01:57:41</a></td>
+                      <td colspan="2">Joins: Matthiasbream</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b02896" id="b02896">01:57:40</a></td>
+                      <td colspan="2">Parts: Matthiasbream</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e1809e" id="e1809e">01:57:17</a></td>
+                      <td colspan="2">Parts: Rastablasta</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7d0b11" id="7d0b11">01:57:05</a></td>
+                      <td colspan="2">Parts: kingpin996</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7da4a9" id="7da4a9">01:57:02</a></td>
+                      <td colspan="2">Parts: doktorant</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#64ceba" id="64ceba">01:56:36</a></td>
+                      <td colspan="2">Parts: zasz82</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#64ceba" id="64ceba">01:56:36</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>Bedge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#422785" id="422785">01:56:28</a></td>
+                      <td colspan="2">Joins: zasz82</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#04e9f0" id="04e9f0">01:56:05</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>jakim cudem ona się pojawia</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3204f4" id="3204f4">01:56:00</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0c3c0b" id="0c3c0b">01:55:54</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>hardpink kandy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ba64d5" id="ba64d5">01:55:49</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6a49d7" id="6a49d7">01:55:43</a></td>
+                      <td class="text-right"><strong>ZiobroXfire</strong></td>
+                      <td>Co tu się dzieje Hmmm </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cb591c" id="cb591c">01:55:34</a></td>
+                      <td colspan="2">Joins: ZiobroXfire</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2427e9" id="2427e9">01:54:59</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>Firefox Can’t Open This Page</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cdde96" id="cdde96">01:53:48</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>stalinowskie metody</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6ec40b" id="6ec40b">01:53:31</a></td>
+                      <td class="text-right"><strong>Dzien_Dobry</strong></td>
+                      <td>monkaGiga </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2802ee" id="2802ee">01:53:28</a></td>
+                      <td class="text-right"><strong>Dzien_Dobry</strong></td>
+                      <td>peepoLove </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#79f62c" id="79f62c">01:53:21</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>nie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5ec8ba" id="5ec8ba">01:53:18</a></td>
+                      <td class="text-right"><strong>trasek</strong></td>
+                      <td>Amour</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9833d4" id="9833d4">01:52:33</a></td>
+                      <td colspan="2">Parts: Czokowoko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ac97e3" id="ac97e3">01:50:12</a></td>
+                      <td colspan="2">Parts: MujStach</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c7e6d6" id="c7e6d6">01:49:17</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>desync jak zwykle</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e2230a" id="e2230a">01:48:57</a></td>
+                      <td colspan="2">Parts: olesh25</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1ea9f0" id="1ea9f0">01:48:49</a></td>
+                      <td colspan="2">Joins: kendzior333</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ce3623" id="ce3623">01:47:40</a></td>
+                      <td colspan="2">Parts: Tokmicz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6980c6" id="6980c6">01:47:12</a></td>
+                      <td colspan="2">Parts: culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ec5dbc" id="ec5dbc">01:44:57</a></td>
+                      <td colspan="2">Parts: Krzychu1410</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ec5dbc" id="ec5dbc">01:44:57</a></td>
+                      <td colspan="2">Joins: Krzychu1410</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5ab121" id="5ab121">01:44:18</a></td>
+                      <td colspan="2">husky.poorchat.net sets mode: +v culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5ab121" id="5ab121">01:44:18</a></td>
+                      <td colspan="2">husky.poorchat.net sets mode: +h culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5ab121" id="5ab121">01:44:18</a></td>
+                      <td colspan="2">Joins: culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3c565c" id="3c565c">01:44:13</a></td>
+                      <td colspan="2">beagle.poorchat.net sets mode: +h doktorant</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3c565c" id="3c565c">01:44:13</a></td>
+                      <td colspan="2">Joins: doktorant</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b9f3c2" id="b9f3c2">01:43:58</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>chłop kurła króla ma w domu Weirdge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2415f3" id="2415f3">01:43:51</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>pasztet z królika</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1c6e3b" id="1c6e3b">01:43:42</a></td>
+                      <td colspan="2">Parts: Krzychu1410</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a7f619" id="a7f619">01:43:31</a></td>
+                      <td colspan="2">Joins: Krzychu1410</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9692de" id="9692de">01:43:09</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>co sie tlucze</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c6146c" id="c6146c">01:43:05</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>trashD </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0ec71f" id="0ec71f">01:39:54</a></td>
+                      <td colspan="2">Parts: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#392072" id="392072">01:39:43</a></td>
+                      <td colspan="2">Parts: Bonkol</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#33da44" id="33da44">01:39:33</a></td>
+                      <td colspan="2">bordercollie.poorchat.net sets mode: +v vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#33da44" id="33da44">01:39:33</a></td>
+                      <td colspan="2">Joins: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#33da44" id="33da44">01:39:33</a></td>
+                      <td colspan="2">Parts: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#41d2e0" id="41d2e0">01:39:10</a></td>
+                      <td class="text-right"><strong>Bonkol</strong></td>
+                      <td>Przelew robi kezeg</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#227f45" id="227f45">01:38:54</a></td>
+                      <td class="text-right"><strong>Bonkol</strong></td>
+                      <td>kazGuul </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a9bdef" id="a9bdef">01:38:53</a></td>
+                      <td colspan="2">dachshund.poorchat.net sets mode: +v vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a9bdef" id="a9bdef">01:38:53</a></td>
+                      <td colspan="2">Joins: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3f9de9" id="3f9de9">01:38:46</a></td>
+                      <td colspan="2">Parts: DonaldDump</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#599971" id="599971">01:38:27</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#599971" id="599971">01:38:27</a></td>
+                      <td class="text-right"><strong>Bonkol</strong></td>
+                      <td>Trasek ty nie masz dziecka aby czaserm aby go usypiać ? Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#eca3c2" id="eca3c2">01:37:58</a></td>
+                      <td colspan="2">Parts: culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2f16aa" id="2f16aa">01:37:55</a></td>
+                      <td colspan="2">dachshund.poorchat.net sets mode: +h Bonkol</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2f16aa" id="2f16aa">01:37:55</a></td>
+                      <td colspan="2">Joins: Bonkol</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8735fd" id="8735fd">01:36:48</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>penis rośnie?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#214b5d" id="214b5d">01:36:15</a></td>
+                      <td class="text-right"><strong>Dzien_Dobry</strong></td>
+                      <td>trasek, RIP </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#66027c" id="66027c">01:34:51</a></td>
+                      <td colspan="2">Parts: Kolikon</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#844ea6" id="844ea6">01:34:26</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>ja tez</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#344a1b" id="344a1b">01:34:25</a></td>
+                      <td colspan="2">Parts: Zygzak191</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#35889e" id="35889e">01:34:15</a></td>
+                      <td colspan="2">Joins: Zygzak191</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3200be" id="3200be">01:34:14</a></td>
+                      <td colspan="2">Parts: Zygzak191</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#04cf7f" id="04cf7f">01:34:13</a></td>
+                      <td class="text-right"><strong>Dzien_Dobry</strong></td>
+                      <td>nażarłem sie dziś i ciągle chce mi sie jesć WTFF </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d5a874" id="d5a874">01:34:05</a></td>
+                      <td colspan="2">Parts: doktorant</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ab2056" id="ab2056">01:33:06</a></td>
+                      <td colspan="2">Parts: Kanabis12</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d541d9" id="d541d9">01:33:03</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>trasek, bobasek trashD </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f2c0cf" id="f2c0cf">01:32:29</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#89cea2" id="89cea2">01:32:24</a></td>
+                      <td colspan="2">Parts: sarim11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#89cea2" id="89cea2">01:32:24</a></td>
+                      <td colspan="2">Joins: sarim11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d25a26" id="d25a26">01:31:56</a></td>
+                      <td colspan="2">Parts: SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fa9478" id="fa9478">01:31:48</a></td>
+                      <td colspan="2">Joins: Dekejpsz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fa9478" id="fa9478">01:31:48</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>kurwa teraz wszyscy w arme grają</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#73bd78" id="73bd78">01:31:23</a></td>
+                      <td colspan="2">Parts: HugoStiglitz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2e3a17" id="2e3a17">01:31:20</a></td>
+                      <td colspan="2">Parts: Etherlord877</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e8454e" id="e8454e">01:30:38</a></td>
+                      <td colspan="2">Parts: qoozy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9ca19b" id="9ca19b">01:29:56</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>miales kolimator</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#67a74e" id="67a74e">01:29:48</a></td>
+                      <td class="text-right"><strong>Pancernik</strong></td>
+                      <td>Aktualnie oglądane: trasek (13), piprocoll (4), sobolder (2), Asmongold (1). <a href="https://pancernik.info" target="_blank">https://pancernik.info</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d3b128" id="d3b128">01:29:39</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aa5d53" id="aa5d53">01:28:25</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>trzy zombie przez przypadek zastrzelił KEKW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#56b4d4" id="56b4d4">01:28:21</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>trasek sabotażysta</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0b491f" id="0b491f">01:28:16</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Brainlet </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0b491f" id="0b491f">01:28:16</a></td>
+                      <td colspan="2">Parts: RedneckZIRH</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ae4a92" id="ae4a92">01:28:11</a></td>
+                      <td colspan="2">Joins: RedneckZIRH</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a33221" id="a33221">01:28:10</a></td>
+                      <td colspan="2">Joins: qoozy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a98f77" id="a98f77">01:27:59</a></td>
+                      <td colspan="2">Parts: Szmaterlok</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3cd56f" id="3cd56f">01:27:53</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9b348a" id="9b348a">01:27:28</a></td>
+                      <td colspan="2">Joins: Azowsky</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#90ca79" id="90ca79">01:27:00</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>RIP</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#62980a" id="62980a">01:26:54</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>trasek czytaj rady wiców na twitchu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#001f60" id="001f60">01:25:56</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5cd284" id="5cd284">01:25:41</a></td>
+                      <td colspan="2">Parts: joszimir</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#13351e" id="13351e">01:25:26</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>zombie go zabiją FaceP </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ccc505" id="ccc505">01:25:23</a></td>
+                      <td colspan="2">Joins: joszimir</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#11e380" id="11e380">01:24:45</a></td>
+                      <td colspan="2">Joins: Wapniak</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#045366" id="045366">01:24:37</a></td>
+                      <td colspan="2">Joins: Paprika</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8c6d77" id="8c6d77">01:24:25</a></td>
+                      <td colspan="2">Parts: Hitmynka</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cf8ceb" id="cf8ceb">01:24:23</a></td>
+                      <td colspan="2">Parts: rraallff111</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#844bff" id="844bff">01:23:38</a></td>
+                      <td colspan="2">Parts: not_a_robot_79</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9c04e7" id="9c04e7">01:23:31</a></td>
+                      <td colspan="2">Parts: sarim11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ff6ae0" id="ff6ae0">01:23:30</a></td>
+                      <td colspan="2">Joins: not_a_robot_79</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cb7954" id="cb7954">01:23:26</a></td>
+                      <td colspan="2">Joins: sarim11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2675a3" id="2675a3">01:23:02</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4d2f44" id="4d2f44">01:23:00</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>KEKLEO </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dda644" id="dda644">01:22:54</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>ale mu kazyntus pojechał KEKLEO</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5dd8cc" id="5dd8cc">01:22:46</a></td>
+                      <td colspan="2">corgi.poorchat.net sets mode: +v SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5dd8cc" id="5dd8cc">01:22:46</a></td>
+                      <td colspan="2">Joins: SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#860f65" id="860f65">01:22:36</a></td>
+                      <td colspan="2">Parts: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#502a02" id="502a02">01:22:28</a></td>
+                      <td colspan="2">Parts: Scoyatelle</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5f99ec" id="5f99ec">01:22:20</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>trasek q tasek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b2d14d" id="b2d14d">01:22:01</a></td>
+                      <td colspan="2">corgi.poorchat.net sets mode: +v sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b2d14d" id="b2d14d">01:22:01</a></td>
+                      <td colspan="2">Joins: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a4974e" id="a4974e">01:21:54</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>trasek, nie ramdom z czatu tylko szanowny pan doktor habilitowany profesor nadzwyczajny</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2ebc15" id="2ebc15">01:21:51</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>sztetler, pymk</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cb32d9" id="cb32d9">01:21:48</a></td>
+                      <td colspan="2">Parts: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5b5aff" id="5b5aff">01:21:25</a></td>
+                      <td colspan="2">akita.poorchat.net sets mode: +v sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5b5aff" id="5b5aff">01:21:25</a></td>
+                      <td colspan="2">Joins: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#25d855" id="25d855">01:21:24</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dd0a6e" id="dd0a6e">01:21:20</a></td>
+                      <td colspan="2">Parts: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#526425" id="526425">01:21:18</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>to napisz PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5edfad" id="5edfad">01:21:01</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>Nie powiem Susge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3c2a3f" id="3c2a3f">01:21:00</a></td>
+                      <td colspan="2">corgi.poorchat.net sets mode: +v sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3c2a3f" id="3c2a3f">01:21:00</a></td>
+                      <td colspan="2">Joins: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fed5e3" id="fed5e3">01:20:52</a></td>
+                      <td colspan="2">Parts: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7b9974" id="7b9974">01:20:46</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>CrazyVet, skąd znasz mój nick na upleju? Susge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c69d1c" id="c69d1c">01:20:29</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>skad wziales tego eidena trasek??? taki maruda wielka</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4fc7cc" id="4fc7cc">01:20:24</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Ajaki jest link fo samego czat</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4fc7cc" id="4fc7cc">01:20:24</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>Wpisz, zapisz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#17bb28" id="17bb28">01:20:09</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>Crszt PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#51fa83" id="51fa83">01:19:45</a></td>
+                      <td colspan="2">corgi.poorchat.net sets mode: +v sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#51fa83" id="51fa83">01:19:45</a></td>
+                      <td colspan="2">Joins: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d1b1c3" id="d1b1c3">01:19:40</a></td>
+                      <td colspan="2">Parts: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9de8ad" id="9de8ad">01:19:10</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Crszt a po co chcesz chrt</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#852c51" id="852c51">01:19:03</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#55b8ae" id="55b8ae">01:18:53</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>CrazyVet, rozpierdalam ekosystem szatanowi Weirdge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bd0f66" id="bd0f66">01:18:45</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>sztetler, a ja spać nie mogę Feels </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#20041b" id="20041b">01:18:32</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>Wpisz, śpisz?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#637fd0" id="637fd0">01:18:30</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>CrazyVet, pepeSmack </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f205c5" id="f205c5">01:18:25</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Leze sb jush</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c26a0b" id="c26a0b">01:18:22</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>Cyceron, </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1d46a6" id="1d46a6">01:17:55</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Szkoda</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5f60ba" id="5f60ba">01:17:49</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>Suheil_Al_Hassan, czyli putin kłamał? OhNo </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ee6253" id="ee6253">01:17:48</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>Witam chyba nigdy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#081404" id="081404">01:17:45</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Mogla by byc</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#69ac7b" id="69ac7b">01:17:37</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Kiedy bedzie aplikacja pancernik na android </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d06128" id="d06128">01:17:29</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#26e638" id="26e638">01:17:10</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>ehhh trasek trasek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f9e3c6" id="f9e3c6">01:16:51</a></td>
+                      <td colspan="2">akita.poorchat.net sets mode: +v sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f9e3c6" id="f9e3c6">01:16:51</a></td>
+                      <td colspan="2">Joins: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4c0c34" id="4c0c34">01:15:20</a></td>
+                      <td colspan="2">Parts: bootycatch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e6cd7e" id="e6cd7e">01:15:19</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td><a href="https://twitter.com/Conflicts/status/1515824767152103443" target="_blank">https://twitter.com/Conflicts/status/1515824767152103443</a> trashD </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dd76e1" id="dd76e1">01:15:16</a></td>
+                      <td colspan="2">Joins: bootycatch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3985d6" id="3985d6">01:15:15</a></td>
+                      <td colspan="2">Parts: bootycatch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2d5f49" id="2d5f49">01:14:25</a></td>
+                      <td colspan="2">Parts: Feuse</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1636e8" id="1636e8">01:14:16</a></td>
+                      <td colspan="2">Parts: Woroderex</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#228280" id="228280">01:13:55</a></td>
+                      <td colspan="2">Parts: SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5621d6" id="5621d6">01:13:39</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>Weirdge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#19c6e6" id="19c6e6">01:12:34</a></td>
+                      <td colspan="2">Parts: Zucho</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2481da" id="2481da">01:12:24</a></td>
+                      <td class="text-right"><strong>Hitmynka</strong></td>
+                      <td>Chciałem rysowanko strimować ale mam problem z wzięciem się za rysowanie,</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#00499d" id="00499d">01:12:20</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>nie peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#626022" id="626022">01:12:13</a></td>
+                      <td class="text-right"><strong>Karasinio</strong></td>
+                      <td>Cyceron, Miej troche szacunku do siebie Cyceron peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c6c833" id="c6c833">01:11:54</a></td>
+                      <td class="text-right"><strong>Hitmynka</strong></td>
+                      <td>A i kiedyś jescze był quake 1 nad ranem i ryse.</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#750613" id="750613">01:11:42</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>Karasinio, dla mnie się liczy peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#298526" id="298526">01:11:41</a></td>
+                      <td class="text-right"><strong>Hitmynka</strong></td>
+                      <td>1 z kangurka kao, później z rysowania i ostatnio z ghostrunnera żeby sprawdzić czy komp padnie </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#58a524" id="58a524">01:11:38</a></td>
+                      <td colspan="2">Parts: Danveld</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#58a524" id="58a524">01:11:38</a></td>
+                      <td colspan="2">Joins: Matthiasbream</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4c9d48" id="4c9d48">01:11:20</a></td>
+                      <td class="text-right"><strong>Karasinio</strong></td>
+                      <td>Cyceron, Ale wiesz że wyżebrane się nie liczy? peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ce70c9" id="ce70c9">01:11:18</a></td>
+                      <td class="text-right"><strong>Hitmynka</strong></td>
+                      <td>trasek, całe 3 strimy miałem.</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#04073e" id="04073e">01:11:17</a></td>
+                      <td colspan="2">Parts: sztetler</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#013db0" id="013db0">01:10:54</a></td>
+                      <td colspan="2">Parts: Mejker</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4e21f2" id="4e21f2">01:10:53</a></td>
+                      <td colspan="2">Joins: Mejker</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b308e0" id="b308e0">01:10:50</a></td>
+                      <td colspan="2">Parts: daarek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a16c60" id="a16c60">01:10:49</a></td>
+                      <td colspan="2">Parts: nzero</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e7fd59" id="e7fd59">01:10:42</a></td>
+                      <td colspan="2">Parts: Naprany</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d1165c" id="d1165c">01:10:25</a></td>
+                      <td colspan="2">Parts: RadoRandom</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#41200e" id="41200e">01:10:15</a></td>
+                      <td colspan="2">Parts: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7471a5" id="7471a5">01:10:10</a></td>
+                      <td colspan="2">Joins: Woroderex</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4073b1" id="4073b1">01:10:09</a></td>
+                      <td colspan="2">Parts: Woroderex</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4073b1" id="4073b1">01:10:09</a></td>
+                      <td colspan="2">Parts: Khador</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#61d19e" id="61d19e">01:09:49</a></td>
+                      <td colspan="2">Parts: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#12bcb0" id="12bcb0">01:09:35</a></td>
+                      <td colspan="2">Parts: Sercio</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3e86db" id="3e86db">01:09:32</a></td>
+                      <td colspan="2">Joins: Sercio</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7bd037" id="7bd037">01:09:27</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>patrzcie go jaki ześwirowany</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#24cf2a" id="24cf2a">01:09:26</a></td>
+                      <td colspan="2">Parts: Tsubasa8</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6203d3" id="6203d3">01:09:16</a></td>
+                      <td class="text-right"><strong>Hitmynka</strong></td>
+                      <td>trasek, paradoks jest taki że prawdziwym januszem jest twórca kabaretu.</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a91994" id="a91994">01:09:08</a></td>
+                      <td colspan="2">Joins: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3ee60f" id="3ee60f">01:09:01</a></td>
+                      <td colspan="2">Parts: Fifek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#77638f" id="77638f">01:08:52</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>sztetler, pepeSmack </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#652ec1" id="652ec1">01:08:47</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Czyczeron świruje Weirdge</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#472c84" id="472c84">01:08:46</a></td>
+                      <td colspan="2">corgi.poorchat.net sets mode: +v vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#472c84" id="472c84">01:08:46</a></td>
+                      <td colspan="2">Joins: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#33a31a" id="33a31a">01:08:41</a></td>
+                      <td colspan="2">Parts: vrch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7f2c61" id="7f2c61">01:07:57</a></td>
+                      <td colspan="2">Parts: TeddDeireadh</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ec201d" id="ec201d">01:07:29</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#23aa61" id="23aa61">01:07:22</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#44dddf" id="44dddf">01:07:14</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>Czyczeron świruje Weirdge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c4b46c" id="c4b46c">01:06:59</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a56f04" id="a56f04">01:06:55</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>Cyceron, ++ peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cac1ec" id="cac1ec">01:06:51</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>culturaldope, pepeSmack halo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8c9ac1" id="8c9ac1">01:06:47</a></td>
+                      <td colspan="2">Parts: rohan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7b8afe" id="7b8afe">01:06:21</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>ale oddaj plusa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#afd43c" id="afd43c">01:06:17</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>culturaldope, ++ peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a076ca" id="a076ca">01:06:12</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>Karasinio, tak YEP pozwolili dokonczyc </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#743fec" id="743fec">01:06:01</a></td>
+                      <td class="text-right"><strong>Karasinio</strong></td>
+                      <td>culturaldope, Robiłem coś innego pattrze a tu ban KEKW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#704abf" id="704abf">01:05:50</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>sztetler, słońce najgorsze TFU </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f4459d" id="f4459d">01:05:31</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>Karasinio, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2ff1da" id="2ff1da">01:05:28</a></td>
+                      <td class="text-right"><strong>Karasinio</strong></td>
+                      <td>culturaldope, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bc6366" id="bc6366">01:05:19</a></td>
+                      <td colspan="2">Parts: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0ab500" id="0ab500">01:05:05</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>o slonce nie swieci w monitor Feels </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#351fdf" id="351fdf">01:04:59</a></td>
+                      <td colspan="2">Joins: TeddDeireadh</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fdb983" id="fdb983">01:04:53</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>a w nocy internet najlepiej dziala</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bfa55f" id="bfa55f">01:04:50</a></td>
+                      <td colspan="2">Parts: Bagienna</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9ba100" id="9ba100">01:04:48</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>no</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#18be16" id="18be16">01:04:41</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>sztetler, najgorzej Sadge HUGGERS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#03e37e" id="03e37e">01:04:33</a></td>
+                      <td class="text-right"><strong>rraallff111</strong></td>
+                      <td><a href="https://pancernik.info/youtube/JgamHCPYZ_A" target="_blank">https://pancernik.info/youtube/JgamHCPYZ_A</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#43d194" id="43d194">01:04:32</a></td>
+                      <td colspan="2">Parts: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f7eafe" id="f7eafe">01:04:28</a></td>
+                      <td colspan="2">Joins: CrazyVet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dbff68" id="dbff68">01:04:26</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Wpisz, musze teraz w nocy spac haHAA </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2672bb" id="2672bb">01:04:12</a></td>
+                      <td colspan="2">Joins: Danveld</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2672bb" id="2672bb">01:04:12</a></td>
+                      <td colspan="2">Parts: Rain</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2672bb" id="2672bb">01:04:12</a></td>
+                      <td colspan="2">Parts: Danveld</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e53577" id="e53577">01:04:07</a></td>
+                      <td class="text-right"><strong>Gisio</strong></td>
+                      <td>Bagienna, pasjonatka historii PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0b1ec4" id="0b1ec4">01:04:06</a></td>
+                      <td colspan="2">Joins: Rain</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0b1ec4" id="0b1ec4">01:04:06</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>quasintus9, z Wonziem? Kaooa </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5bd3ef" id="5bd3ef">01:04:05</a></td>
+                      <td colspan="2">Parts: Dimbar</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1fbacc" id="1fbacc">01:03:49</a></td>
+                      <td colspan="2">Joins: Dimbar</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1fbacc" id="1fbacc">01:03:49</a></td>
+                      <td colspan="2">Parts: Dimbar</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4bf712" id="4bf712">01:03:36</a></td>
+                      <td class="text-right"><strong>Naprany</strong></td>
+                      <td>quasintus9, turniej ci się snił? Kappa </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#def12e" id="def12e">01:03:21</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>Wpisz, mi się śniła planetarka Hmmm </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ce7514" id="ce7514">01:03:20</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td><a href="https://img-9gag-fun.9cache.com/photo/aVxmdGP_460svav1.mp4" target="_blank">https://img-9gag-fun.9cache.com/photo/aVxmdGP_460svav1.mp4</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#08fc49" id="08fc49">01:03:16</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek, Pan to się ale stoczył Sadge</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#18dc06" id="18dc06">01:03:01</a></td>
+                      <td colspan="2">Parts: Lesownik</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6a13d7" id="6a13d7">01:02:56</a></td>
+                      <td colspan="2">beagle.poorchat.net sets mode: +v SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6a13d7" id="6a13d7">01:02:56</a></td>
+                      <td colspan="2">Joins: SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4e518e" id="4e518e">01:02:55</a></td>
+                      <td colspan="2">Parts: SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f37551" id="f37551">01:02:53</a></td>
+                      <td class="text-right"><strong>Bagienna</strong></td>
+                      <td>PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3d79eb" id="3d79eb">01:02:50</a></td>
+                      <td colspan="2">beagle.poorchat.net sets mode: +v SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3d79eb" id="3d79eb">01:02:50</a></td>
+                      <td colspan="2">Joins: SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3d79eb" id="3d79eb">01:02:50</a></td>
+                      <td colspan="2">Parts: Cpt_Ace</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#753f37" id="753f37">01:02:47</a></td>
+                      <td colspan="2">Parts: sarim11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a95b77" id="a95b77">01:02:46</a></td>
+                      <td class="text-right"><strong>Bagienna</strong></td>
+                      <td>ja tam dla historii bylam KEKM</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#421137" id="421137">01:02:37</a></td>
+                      <td colspan="2">Parts: Whayet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9c68de" id="9c68de">01:02:31</a></td>
+                      <td colspan="2">Parts: wojtek354</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f6c432" id="f6c432">01:02:30</a></td>
+                      <td colspan="2">Parts: Geronimo882</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cc3842" id="cc3842">01:02:28</a></td>
+                      <td colspan="2">Joins: wojtek354</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#46ccb4" id="46ccb4">01:02:23</a></td>
+                      <td class="text-right"><strong>Gisio</strong></td>
+                      <td>Bagienna, a pani to mało :eggplant: ? xD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#04ab43" id="04ab43">01:02:19</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>Bagienna, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7e3945" id="7e3945">01:02:18</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>lolerkoster ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c444bb" id="c444bb">01:02:16</a></td>
+                      <td class="text-right"><strong>Bagienna</strong></td>
+                      <td>culturaldope, ++ wieczór złoto peepoLove </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#edac73" id="edac73">01:02:14</a></td>
+                      <td colspan="2">Parts: Riper</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#80a5b7" id="80a5b7">01:02:10</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>śnił mi się raz Elden Weirdge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#80a5b7" id="80a5b7">01:02:10</a></td>
+                      <td colspan="2">Parts: Cienkipies</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5b704f" id="5b704f">01:02:09</a></td>
+                      <td colspan="2">Parts: Azowsky</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#898ea3" id="898ea3">01:02:01</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>quasintus9, peepoGlad :thumbsup: </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#388366" id="388366">01:01:42</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>Wpisz, dziś zmniejszyłem liczbe bestii (eldeńskich) o jedną EZ</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#29d9fa" id="29d9fa">01:01:40</a></td>
+                      <td colspan="2">Parts: ZiobroXfire</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9d2e9f" id="9d2e9f">01:01:36</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>trasek, ale bezbecki kabaret</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c17180" id="c17180">01:01:28</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>Pan sztetler PogChoomp z rok szanownego nie widziełem </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#497aa3" id="497aa3">01:01:14</a></td>
+                      <td colspan="2">Parts: wojtek354</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#497aa3" id="497aa3">01:01:14</a></td>
+                      <td colspan="2">Joins: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f968d2" id="f968d2">01:01:13</a></td>
+                      <td colspan="2">Parts: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f968d2" id="f968d2">01:01:13</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>cześ Wpisz peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#333d0f" id="333d0f">01:01:05</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>Wpisz, nawzajem TFU peepoHappy </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#333d0f" id="333d0f">01:01:05</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Suheil_Al_Hassan, tak</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6e0534" id="6e0534">01:00:52</a></td>
+                      <td class="text-right"><strong>Wpisz</strong></td>
+                      <td>Wesołego Szmyngusa-Dyngusa TFU peepoHappy </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5b8f5c" id="5b8f5c">01:00:39</a></td>
+                      <td colspan="2">Joins: Danveld</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cf536f" id="cf536f">01:00:38</a></td>
+                      <td colspan="2">Parts: Danveld</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9c8eab" id="9c8eab">01:00:25</a></td>
+                      <td colspan="2">Joins: Wpisz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1a873c" id="1a873c">01:00:13</a></td>
+                      <td colspan="2">Parts: Rowerrek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#92de6c" id="92de6c">01:00:00</a></td>
+                      <td colspan="2">Joins: Rowerrek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b887e6" id="b887e6">00:59:50</a></td>
+                      <td colspan="2">Joins: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b887e6" id="b887e6">00:59:50</a></td>
+                      <td colspan="2">Parts: MegicPotato</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#642c31" id="642c31">00:59:37</a></td>
+                      <td colspan="2">Joins: rohan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#642c31" id="642c31">00:59:37</a></td>
+                      <td colspan="2">Joins: Fifek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dd9f4f" id="dd9f4f">00:59:36</a></td>
+                      <td colspan="2">beagle.poorchat.net sets mode: +v quasintus9</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dd9f4f" id="dd9f4f">00:59:36</a></td>
+                      <td colspan="2">Joins: quasintus9</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dd9f4f" id="dd9f4f">00:59:36</a></td>
+                      <td colspan="2">Parts: Fifek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f6a249" id="f6a249">00:59:35</a></td>
+                      <td colspan="2">Parts: lolerkoster</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#37ab45" id="37ab45">00:59:01</a></td>
+                      <td colspan="2">Parts: Kamyyk</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5f34ec" id="5f34ec">00:58:57</a></td>
+                      <td colspan="2">Parts: SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#775669" id="775669">00:58:56</a></td>
+                      <td colspan="2">Parts: exus1pl</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fe985f" id="fe985f">00:58:47</a></td>
+                      <td colspan="2">Parts: quasintus9</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cc0a19" id="cc0a19">00:58:22</a></td>
+                      <td colspan="2">Parts: xellos</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7be793" id="7be793">00:57:56</a></td>
+                      <td colspan="2">Parts: TeddDeireadh</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6c46ef" id="6c46ef">00:57:19</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fb1cef" id="fb1cef">00:57:10</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2f826f" id="2f826f">00:57:07</a></td>
+                      <td colspan="2">corgi.poorchat.net sets mode: +v exus1pl</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2f826f" id="2f826f">00:57:07</a></td>
+                      <td colspan="2">Joins: exus1pl</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#89653c" id="89653c">00:57:03</a></td>
+                      <td colspan="2">Parts: exus1pl</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b68db4" id="b68db4">00:56:51</a></td>
+                      <td colspan="2">corgi.poorchat.net sets mode: +v Bagienna</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b68db4" id="b68db4">00:56:51</a></td>
+                      <td colspan="2">Joins: Bagienna</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5579f5" id="5579f5">00:56:50</a></td>
+                      <td colspan="2">Parts: Bagienna</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a739fc" id="a739fc">00:56:38</a></td>
+                      <td colspan="2">Parts: Dekejpsz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bf9829" id="bf9829">00:55:47</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d458af" id="d458af">00:55:44</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>z filmami</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aa7250" id="aa7250">00:55:40</a></td>
+                      <td colspan="2">Joins: Cpt_Ace</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aa7250" id="aa7250">00:55:40</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>polecam ten kanał</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#88f767" id="88f767">00:55:39</a></td>
+                      <td colspan="2">Parts: Sofizmat</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0b2ff6" id="0b2ff6">00:55:38</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ddffc7" id="ddffc7">00:55:34</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>i przemoc</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#43e160" id="43e160">00:55:31</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>seks</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b7664f" id="b7664f">00:55:11</a></td>
+                      <td class="text-right"><strong>lolerkoster</strong></td>
+                      <td>culturaldope, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#22d0d3" id="22d0d3">00:55:10</a></td>
+                      <td colspan="2">Joins: Zygzak191</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b360d7" id="b360d7">00:55:07</a></td>
+                      <td colspan="2">Parts: malyolbrzym</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9d196a" id="9d196a">00:54:39</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>malyolbrzym, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#395a83" id="395a83">00:54:37</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a9d25e" id="a9d25e">00:54:36</a></td>
+                      <td class="text-right"><strong>malyolbrzym</strong></td>
+                      <td>culturaldope, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9ef05f" id="9ef05f">00:54:34</a></td>
+                      <td colspan="2">Parts: Matthiasbream</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cbfe32" id="cbfe32">00:54:33</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#33c236" id="33c236">00:54:30</a></td>
+                      <td class="text-right"><strong>malyolbrzym</strong></td>
+                      <td>culturaldope, Hmmm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d3b636" id="d3b636">00:54:04</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>Gisio, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#925136" id="925136">00:53:58</a></td>
+                      <td class="text-right"><strong>Gisio</strong></td>
+                      <td>culturaldope, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d1286f" id="d1286f">00:53:40</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#362293" id="362293">00:53:31</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6d8168" id="6d8168">00:53:08</a></td>
+                      <td colspan="2">Parts: not_a_robot_79</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f6e514" id="f6e514">00:52:59</a></td>
+                      <td colspan="2">germansheppard.poorchat.net sets mode: +v SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f6e514" id="f6e514">00:52:59</a></td>
+                      <td colspan="2">Joins: SgtBruin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2427de" id="2427de">00:52:45</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a1cb10" id="a1cb10">00:52:35</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6183e9" id="6183e9">00:51:52</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>nie widze</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3101ea" id="3101ea">00:51:32</a></td>
+                      <td class="text-right"><strong>Gisio</strong></td>
+                      <td>Suheil_Al_Hassan, nie, walilmy, serio bo kaligula leci xD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5777d2" id="5777d2">00:50:40</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>spicie?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7c9612" id="7c9612">00:50:06</a></td>
+                      <td colspan="2">Parts: daamiansz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#99e9d9" id="99e9d9">00:49:17</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Bedge chrrr</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4d8004" id="4d8004">00:49:06</a></td>
+                      <td colspan="2">Parts: Vrgil</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d6e88b" id="d6e88b">00:49:03</a></td>
+                      <td colspan="2">Joins: Vrgil</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0b76e7" id="0b76e7">00:48:59</a></td>
+                      <td colspan="2">Parts: Cpt_Ace</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9f76e4" id="9f76e4">00:48:07</a></td>
+                      <td colspan="2">Parts: Amakus</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#54d1ea" id="54d1ea">00:47:03</a></td>
+                      <td colspan="2">Parts: Azgran</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6f848e" id="6f848e">00:46:41</a></td>
+                      <td class="text-right"><strong>Pancernik</strong></td>
+                      <td><span style="color: olive">trasek</span> gra w DayZ (9/12 widzów). Oglądaj z czatem: <a href="https://pancernik.info/twitch/trasek" target="_blank">https://pancernik.info/twitch/trasek</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6f848e" id="6f848e">00:46:41</a></td>
+                      <td class="text-right"><strong>trasek</strong></td>
+                      <td>.watch twitch trasek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9409df" id="9409df">00:46:37</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#50ed23" id="50ed23">00:46:18</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>Etherlord877, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4fc332" id="4fc332">00:46:15</a></td>
+                      <td colspan="2">Parts: RedneckZIRH</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d0db62" id="d0db62">00:46:10</a></td>
+                      <td class="text-right"><strong>Etherlord877</strong></td>
+                      <td>culturaldope, ++ YEPYEPYEP </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9b5d84" id="9b5d84">00:45:36</a></td>
+                      <td colspan="2">Parts: Grimeek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ea72da" id="ea72da">00:44:38</a></td>
+                      <td colspan="2">Parts: Micr0</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#177a15" id="177a15">00:44:27</a></td>
+                      <td colspan="2">Joins: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6a9add" id="6a9add">00:43:58</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8e7f92" id="8e7f92">00:43:52</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#79007b" id="79007b">00:43:34</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#628f29" id="628f29">00:43:26</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f4c56e" id="f4c56e">00:43:24</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>nic nie widze</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ab3ffe" id="ab3ffe">00:43:21</a></td>
+                      <td colspan="2">Joins: RedneckZIRH</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aa4eec" id="aa4eec">00:42:02</a></td>
+                      <td colspan="2">Parts: NuklearnaKawa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9803f0" id="9803f0">00:41:03</a></td>
+                      <td colspan="2">Parts: joszimir</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#277f74" id="277f74">00:40:56</a></td>
+                      <td colspan="2">Parts: UzbrojonyStefan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ea12e2" id="ea12e2">00:40:53</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#170ba1" id="170ba1">00:40:49</a></td>
+                      <td colspan="2">Joins: Cpt_Ace</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2dd3a8" id="2dd3a8">00:40:26</a></td>
+                      <td colspan="2">Joins: joszimir</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#eda9b8" id="eda9b8">00:40:12</a></td>
+                      <td colspan="2">Joins: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#322329" id="322329">00:39:30</a></td>
+                      <td colspan="2">Parts: ColdFish</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#50e6b5" id="50e6b5">00:39:11</a></td>
+                      <td colspan="2">Parts: Legion331</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7da5a3" id="7da5a3">00:38:43</a></td>
+                      <td class="text-right"><strong>doktorant</strong></td>
+                      <td><a href="https://i.imgur.com/fIDsnWX.png" target="_blank">https://i.imgur.com/fIDsnWX.png</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#084e29" id="084e29">00:38:35</a></td>
+                      <td colspan="2">Parts: kibu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#908869" id="908869">00:37:27</a></td>
+                      <td colspan="2">Parts: Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#97ae3d" id="97ae3d">00:37:20</a></td>
+                      <td colspan="2">Joins: R3C0RD1NG</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#787a9b" id="787a9b">00:37:16</a></td>
+                      <td colspan="2">Parts: R3C0RD1NG</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#064ecf" id="064ecf">00:37:10</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2340ef" id="2340ef">00:37:07</a></td>
+                      <td colspan="2">germansheppard.poorchat.net sets mode: +v Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2340ef" id="2340ef">00:37:07</a></td>
+                      <td colspan="2">Joins: Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#20c291" id="20c291">00:36:51</a></td>
+                      <td colspan="2">Parts: Kryt</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#20c291" id="20c291">00:36:51</a></td>
+                      <td colspan="2">beagle.poorchat.net sets mode: +v kazek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#20c291" id="20c291">00:36:51</a></td>
+                      <td colspan="2">Joins: kazek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7d982b" id="7d982b">00:36:48</a></td>
+                      <td colspan="2">Parts: kazek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6ea98d" id="6ea98d">00:36:46</a></td>
+                      <td colspan="2">Joins: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a4234a" id="a4234a">00:36:42</a></td>
+                      <td colspan="2">Joins: Kryt</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#07b4b3" id="07b4b3">00:36:02</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>bedzie strzelał</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dc8971" id="dc8971">00:35:34</a></td>
+                      <td colspan="2">Joins: Kreler272</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dd6ef0" id="dd6ef0">00:35:28</a></td>
+                      <td colspan="2">Parts: Santangelus</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a2aef6" id="a2aef6">00:35:26</a></td>
+                      <td colspan="2">Parts: AkiM1223</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0f3c1d" id="0f3c1d">00:35:23</a></td>
+                      <td colspan="2">Joins: Santangelus</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bd6129" id="bd6129">00:35:12</a></td>
+                      <td colspan="2">bordercollie.poorchat.net sets mode: +v kazek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bd6129" id="bd6129">00:35:12</a></td>
+                      <td colspan="2">Joins: kazek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#edd90a" id="edd90a">00:35:06</a></td>
+                      <td colspan="2">Parts: kazek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#15d4df" id="15d4df">00:35:01</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>maks smietana co jest</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#024eb3" id="024eb3">00:34:42</a></td>
+                      <td colspan="2">Parts: Kasztelan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d1821d" id="d1821d">00:34:24</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#83569c" id="83569c">00:33:55</a></td>
+                      <td colspan="2">Joins: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9f3092" id="9f3092">00:33:24</a></td>
+                      <td colspan="2">Joins: Micr0</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9f3092" id="9f3092">00:33:24</a></td>
+                      <td colspan="2">Parts: Huberto606</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7cbd0a" id="7cbd0a">00:33:01</a></td>
+                      <td class="text-right"><strong>Max2montana</strong></td>
+                      <td>lasiu, jestes?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#56b4f8" id="56b4f8">00:32:46</a></td>
+                      <td class="text-right"><strong>Max2montana</strong></td>
+                      <td>hejo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d67d18" id="d67d18">00:32:15</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#83b60b" id="83b60b">00:32:08</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8a6e58" id="8a6e58">00:31:58</a></td>
+                      <td colspan="2">Joins: Kasztelan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1c6ed7" id="1c6ed7">00:31:56</a></td>
+                      <td colspan="2">Parts: Micr0</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b71266" id="b71266">00:31:50</a></td>
+                      <td colspan="2">Parts: trupus_maximus</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#95b252" id="95b252">00:31:20</a></td>
+                      <td colspan="2">Parts: Kasztelan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#77a4b5" id="77a4b5">00:31:05</a></td>
+                      <td colspan="2">Joins: Kasztelan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#23dc69" id="23dc69">00:31:02</a></td>
+                      <td colspan="2">Parts: FxK</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fdb4aa" id="fdb4aa">00:30:57</a></td>
+                      <td class="text-right"><strong>culturaldope</strong></td>
+                      <td>FxK, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9212f3" id="9212f3">00:30:54</a></td>
+                      <td colspan="2">Parts: Vodan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1c518b" id="1c518b">00:30:53</a></td>
+                      <td class="text-right"><strong>FxK</strong></td>
+                      <td>dobranocs Sadge /</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2eb11e" id="2eb11e">00:30:50</a></td>
+                      <td class="text-right"><strong>FxK</strong></td>
+                      <td>culturaldope, ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3d2d95" id="3d2d95">00:30:39</a></td>
+                      <td colspan="2">Joins: Legion331</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ed5aac" id="ed5aac">00:30:30</a></td>
+                      <td colspan="2">Parts: Kasztelan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#980f74" id="980f74">00:30:17</a></td>
+                      <td colspan="2">Parts: Cpt_Ace</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#65bd2a" id="65bd2a">00:28:32</a></td>
+                      <td colspan="2">Parts: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8fa647" id="8fa647">00:28:26</a></td>
+                      <td colspan="2">Joins: Hitmynka</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d41d1f" id="d41d1f">00:28:03</a></td>
+                      <td colspan="2">Joins: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7dc765" id="7dc765">00:26:09</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#40207b" id="40207b">00:25:52</a></td>
+                      <td colspan="2">Joins: Fifek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a286c9" id="a286c9">00:25:51</a></td>
+                      <td colspan="2">Parts: Fifek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#673794" id="673794">00:25:50</a></td>
+                      <td colspan="2">Parts: alfred_hugecock</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cba757" id="cba757">00:25:20</a></td>
+                      <td colspan="2">Joins: Fifek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#daa295" id="daa295">00:25:19</a></td>
+                      <td colspan="2">Parts: Fifek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9e6bac" id="9e6bac">00:24:56</a></td>
+                      <td colspan="2">Parts: CobbPL</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1c3ce5" id="1c3ce5">00:24:07</a></td>
+                      <td colspan="2">Parts: didwel</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#191bdc" id="191bdc">00:24:00</a></td>
+                      <td colspan="2">Joins: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cfbf73" id="cfbf73">00:23:52</a></td>
+                      <td colspan="2">Parts: Odyniec35</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c388fb" id="c388fb">00:23:34</a></td>
+                      <td colspan="2">Joins: Odyniec35</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c388fb" id="c388fb">00:23:34</a></td>
+                      <td colspan="2">Parts: Odyniec35</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b3cfd4" id="b3cfd4">00:23:33</a></td>
+                      <td colspan="2">Joins: Odyniec35</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3868fc" id="3868fc">00:22:25</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek, nic im o nas nie mów peepoShy </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c17f85" id="c17f85">00:21:41</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek dobra pierdol to bieganie, odpalaj kamerkę, wyciagaj naganiacza i włączaj donejty Pepega </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#76ec95" id="76ec95">00:21:16</a></td>
+                      <td colspan="2">Parts: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3e5c5f" id="3e5c5f">00:21:05</a></td>
+                      <td colspan="2">Parts: Odyniec35</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7ccb26" id="7ccb26">00:21:02</a></td>
+                      <td colspan="2">Joins: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#26de50" id="26de50">00:20:59</a></td>
+                      <td colspan="2">Parts: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#654bb2" id="654bb2">00:20:56</a></td>
+                      <td colspan="2">Joins: Odyniec35</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#031083" id="031083">00:20:54</a></td>
+                      <td colspan="2">Joins: Tonkor</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#551b27" id="551b27">00:20:50</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9f7a74" id="9f7a74">00:20:35</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek prawdziwy Polak by opierdolil ze smakiem Madge</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2afdfb" id="2afdfb">00:20:20</a></td>
+                      <td colspan="2">Parts: wowvar</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4cfb9f" id="4cfb9f">00:20:18</a></td>
+                      <td colspan="2">Parts: Odyniec35</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#37b563" id="37b563">00:20:15</a></td>
+                      <td colspan="2">Parts: Kreler272</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0ce292" id="0ce292">00:20:13</a></td>
+                      <td colspan="2">Parts: pozytrum</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#20b1b5" id="20b1b5">00:20:08</a></td>
+                      <td colspan="2">Parts: Diabellus</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#20b1b5" id="20b1b5">00:20:08</a></td>
+                      <td class="text-right"><strong>Kasztelan</strong></td>
+                      <td>trasek, zniszczone KEKM</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b5e84a" id="b5e84a">00:19:59</a></td>
+                      <td class="text-right"><strong>Odyniec35</strong></td>
+                      <td>Ej mas ktoś mema z Pawełkiem co kusi </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ac3a25" id="ac3a25">00:19:44</a></td>
+                      <td colspan="2">Joins: Odyniec35</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#54d306" id="54d306">00:19:11</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>BEKA Z TYPA NIE MA MAGAZYNKA</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c17940" id="c17940">00:19:08</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c17940" id="c17940">00:19:08</a></td>
+                      <td colspan="2">Parts: Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d231fd" id="d231fd">00:19:05</a></td>
+                      <td colspan="2">bordercollie.poorchat.net sets mode: +v Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d231fd" id="d231fd">00:19:05</a></td>
+                      <td colspan="2">Joins: Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d231fd" id="d231fd">00:19:05</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d231fd" id="d231fd">00:19:05</a></td>
+                      <td colspan="2">Parts: Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#45290a" id="45290a">00:19:04</a></td>
+                      <td colspan="2">Parts: Sparhawk</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e08f7b" id="e08f7b">00:19:02</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#94ac07" id="94ac07">00:18:59</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Riper, ok PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6f13f2" id="6f13f2">00:18:57</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>pobiega, pobiega a pote go zabijo PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a72084" id="a72084">00:18:49</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>sztetler, nimc Weirdge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c81fdd" id="c81fdd">00:18:41</a></td>
+                      <td colspan="2">Joins: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3fe8f3" id="3fe8f3">00:18:23</a></td>
+                      <td colspan="2">bordercollie.poorchat.net sets mode: +v Riper</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3fe8f3" id="3fe8f3">00:18:23</a></td>
+                      <td colspan="2">Joins: Riper</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#301e42" id="301e42">00:18:22</a></td>
+                      <td colspan="2">bordercollie.poorchat.net sets mode: +v Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#301e42" id="301e42">00:18:22</a></td>
+                      <td colspan="2">Joins: Wotan91</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b52c50" id="b52c50">00:18:18</a></td>
+                      <td colspan="2">Parts: Riper</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c9074b" id="c9074b">00:18:13</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2cf69b" id="2cf69b">00:18:06</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek, a Ty znowu biegniesz? Nudna ta gra </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#77304e" id="77304e">00:18:04</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>Riper, a ty co brsh</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6c99c8" id="6c99c8">00:17:58</a></td>
+                      <td class="text-right"><strong>Kasztelan</strong></td>
+                      <td>trasek, transfuzji potrzeba</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c37431" id="c37431">00:17:40</a></td>
+                      <td colspan="2">Parts: Tracz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5c07bf" id="5c07bf">00:17:34</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fa9a84" id="fa9a84">00:17:24</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#62a18a" id="62a18a">00:17:18</a></td>
+                      <td colspan="2">Parts: Bron</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#54ee2b" id="54ee2b">00:16:42</a></td>
+                      <td colspan="2">Parts: klll</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c25f28" id="c25f28">00:16:13</a></td>
+                      <td colspan="2">Parts: Hitmynka</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#49e7ae" id="49e7ae">00:16:03</a></td>
+                      <td colspan="2">Joins: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d57f80" id="d57f80">00:15:19</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>fjne te tagi se puh przeglada WeirdDude </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#73e662" id="73e662">00:14:30</a></td>
+                      <td colspan="2">Joins: kibu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e4459d" id="e4459d">00:14:29</a></td>
+                      <td colspan="2">Parts: kibu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2861b8" id="2861b8">00:14:21</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek, zaćma, jak szybko nie zgłosisz do NFZ to będziesz ślepy Sadge</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c2302c" id="c2302c">00:14:17</a></td>
+                      <td colspan="2">Parts: xrdnh1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#96aeaf" id="96aeaf">00:14:11</a></td>
+                      <td colspan="2">Parts: blank</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ee2fd7" id="ee2fd7">00:14:10</a></td>
+                      <td colspan="2">Parts: eternal_slavo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d70b0e" id="d70b0e">00:14:08</a></td>
+                      <td colspan="2">Joins: blank</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c6d8a9" id="c6d8a9">00:13:45</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0e6785" id="0e6785">00:13:44</a></td>
+                      <td colspan="2">Parts: Emil</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0e6785" id="0e6785">00:13:44</a></td>
+                      <td colspan="2">Joins: kibu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9b3dda" id="9b3dda">00:13:36</a></td>
+                      <td colspan="2">Parts: kusiu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f70fbb" id="f70fbb">00:13:30</a></td>
+                      <td colspan="2">Joins: kusiu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#818bf1" id="818bf1">00:12:44</a></td>
+                      <td colspan="2">Joins: pozytrum</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#081932" id="081932">00:12:21</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#263356" id="263356">00:12:18</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#48c376" id="48c376">00:11:56</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d3538a" id="d3538a">00:11:48</a></td>
+                      <td class="text-right"><strong>Suheil_Al_Hassan</strong></td>
+                      <td>trasek, pacz jak sie z ciebie krew leje</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a215f1" id="a215f1">00:11:42</a></td>
+                      <td class="text-right"><strong>Puhh_</strong></td>
+                      <td><a href="https://www.wykop.pl/wpis/65063065/#comment-230543977" target="_blank">https://www.wykop.pl/wpis/65063065/#comment-230543977</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cc5756" id="cc5756">00:11:36</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>Kasztelan, stopbeingMean </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d51beb" id="d51beb">00:11:35</a></td>
+                      <td colspan="2">Joins: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d81af1" id="d81af1">00:11:13</a></td>
+                      <td class="text-right"><strong>Kasztelan</strong></td>
+                      <td>trasek, lecz się Weirdge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#122910" id="122910">00:10:08</a></td>
+                      <td colspan="2">Joins: Bron</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f01620" id="f01620">00:10:01</a></td>
+                      <td colspan="2">Parts: Bron</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b48403" id="b48403">00:09:59</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek, dlaczego Ty tylko biegasz po lesie a oni grają?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#108fbc" id="108fbc">00:09:48</a></td>
+                      <td colspan="2">Joins: Aleis12</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#da36a9" id="da36a9">00:09:29</a></td>
+                      <td colspan="2">Parts: kibu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b0e734" id="b0e734">00:09:23</a></td>
+                      <td colspan="2">Parts: Onfir</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d36375" id="d36375">00:09:15</a></td>
+                      <td class="text-right"><strong>Kasztelan</strong></td>
+                      <td>trasek, to jakiś maraton biegowy?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0384b8" id="0384b8">00:09:08</a></td>
+                      <td colspan="2">Parts: 0sad1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ef32b4" id="ef32b4">00:09:00</a></td>
+                      <td colspan="2">Parts: Kairen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5a3b83" id="5a3b83">00:08:52</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek, zawsze spóźniony Sadge</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7d89f5" id="7d89f5">00:08:47</a></td>
+                      <td colspan="2">Parts: KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e6ef8e" id="e6ef8e">00:08:46</a></td>
+                      <td colspan="2">beagle.poorchat.net sets mode: +v KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e6ef8e" id="e6ef8e">00:08:46</a></td>
+                      <td colspan="2">Joins: KApu_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#88164e" id="88164e">00:08:44</a></td>
+                      <td colspan="2">Joins: Kairen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#198a0f" id="198a0f">00:08:22</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek a pokazywałes już siusiaka?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#898313" id="898313">00:08:05</a></td>
+                      <td colspan="2">Parts: urbanqq</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#220c62" id="220c62">00:08:02</a></td>
+                      <td colspan="2">Parts: zwieracz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#113539" id="113539">00:07:31</a></td>
+                      <td colspan="2">Parts: Puhh_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b0b34d" id="b0b34d">00:07:29</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>trasek, która godzinę już tak biegniesz?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#255682" id="255682">00:06:12</a></td>
+                      <td colspan="2">Parts: sepulki</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e82a5c" id="e82a5c">00:04:59</a></td>
+                      <td colspan="2">Joins: Flashovy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b52c4c" id="b52c4c">00:04:55</a></td>
+                      <td colspan="2">Parts: Dawixo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cc5830" id="cc5830">00:04:13</a></td>
+                      <td colspan="2">Parts: Moodson</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ab102b" id="ab102b">00:04:11</a></td>
+                      <td class="text-right"><strong>Dzien_Dobry</strong></td>
+                      <td>Hmmm </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#26f5e1" id="26f5e1">00:04:05</a></td>
+                      <td class="text-right"><strong>Pancernik</strong></td>
+                      <td>This Means Warp (71,99&nbsp;zł). 88% pozytywnych recenzji. Liczba graczy: 48. <a href="https://store.steampowered.com/app/1269300/" target="_blank">https://store.steampowered.com/app/1269300/</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b70587" id="b70587">00:04:04</a></td>
+                      <td class="text-right"><strong>Dzien_Dobry</strong></td>
+                      <td>.steam this means warp</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8eeb1f" id="8eeb1f">00:03:46</a></td>
+                      <td colspan="2">Joins: Moodson</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fe9d4c" id="fe9d4c">00:03:44</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>jak w życiu PolakREe </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cbeeec" id="cbeeec">00:02:48</a></td>
+                      <td colspan="2">Joins: Dawixo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5648e7" id="5648e7">00:02:24</a></td>
+                      <td colspan="2">Parts: Nesher</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a9e3fd" id="a9e3fd">00:02:19</a></td>
+                      <td colspan="2">Parts: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#66e80d" id="66e80d">00:02:17</a></td>
+                      <td colspan="2">Joins: Stasiaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#630afd" id="630afd">00:01:45</a></td>
+                      <td colspan="2">Joins: xellos</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#07ebd3" id="07ebd3">00:01:44</a></td>
+                      <td colspan="2">Parts: xellos</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#989a0d" id="989a0d">00:00:23</a></td>
+                      <td colspan="2">Parts: GhostMy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f4281a" id="f4281a">00:00:09</a></td>
+                      <td colspan="2">Parts: Stasiaj</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2022-04-17" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2022-04-18/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2022-04-18/4">4</a></li>
+                        <li><a href="/log/2022-04-18/5">5</a></li>
+                        <li><a href="/log/2022-04-18/6">6</a></li>
+                        <li><a href="/log/2022-04-18/7">7</a></li>
+                        <li class="active"><a href="/log/2022-04-18/8">8</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2022-04-19" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left"></div>
+            <div class="pull-right"><a href="http://tr0l.it/">tr0lit</a> <i class="fa fa-heart"></i> 2022</div>
+            <div class="clearfix"></div> 
+        </div>
+    </div>
+
+
+</body></html>

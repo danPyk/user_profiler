@@ -1,0 +1,533 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0090FF">
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <title>Pancernik Statystyki</title>
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/onoloilfmbomfgdalcbbpnlnhibneofa">
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/pancernik/css/pancernik.css" rel="stylesheet">
+    <link href="/style-watch.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/js/bootstrap-datetimepicker.css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-jFSKtW5GA3kS9GVsQR+4Ih/7VfiOpMRm6DpnNNG9yfcdtusvmPoXrxdvp/vzlKrg"></script><script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/highstock.js"></script>
+    <script src="/js/highcharts.theme.js"></script>
+    <script src="/js/moment-with-locales.min.js"></script>
+    <script src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/js/pancernik.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><i class="icon-pancernik"></i> Statystyki</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Statystyki</a>
+                    </li>
+                    <li class="active">
+                        <a href="/logs">Archiwum</a>
+                    </li>
+                    <li>
+                        <a href="/karma">Karma</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://pancernik.info">Watch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="page-header">
+                <h3><i class="fa fa-calendar-o"></i> 2022-04-20</h3>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2022-04-19" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2022-04-20/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2022-04-20/4">4</a></li>
+                        <li><a href="/log/2022-04-20/5">5</a></li>
+                        <li><a href="/log/2022-04-20/6">6</a></li>
+                        <li><a href="/log/2022-04-20/7">7</a></li>
+                        <li class="active"><a href="/log/2022-04-20/8">8</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2022-04-21" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered" style="word-wrap: break-word;">
+                    <colgroup>
+                        <col style="width: 73px;">
+                        <col style="width: 188px;">
+                        <col style="width: auto">
+                    </colgroup>
+                    <tbody><tr>
+                      <td class="time"><a href="#b57717" id="b57717">00:08:33</a></td>
+                      <td colspan="2">akita.poorchat.net sets mode: +o bltzkrg22</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b57717" id="b57717">00:08:33</a></td>
+                      <td colspan="2">Joins: bltzkrg22</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3e3f1c" id="3e3f1c">00:08:19</a></td>
+                      <td class="text-right"><strong>bootycatch</strong></td>
+                      <td>anioł inklinacji i deklinacji PepoG</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#759cf6" id="759cf6">00:08:15</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>TeddDeireadh, tutaj tylko długość się liczy peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#19b488" id="19b488">00:08:03</a></td>
+                      <td colspan="2">Parts: sarim11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fedaa2" id="fedaa2">00:08:01</a></td>
+                      <td colspan="2">Joins: joszimir</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f0037b" id="f0037b">00:07:58</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td>Cyceron, no ale nie podali grubości Hmmm </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#77a26f" id="77a26f">00:07:54</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>zjebana na dodatek peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2a6822" id="2a6822">00:07:51</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#342c97" id="342c97">00:07:45</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>lasiu, alama banasus Cyceron ANGERY </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#09e2ac" id="09e2ac">00:07:41</a></td>
+                      <td class="text-right"><strong>bootycatch</strong></td>
+                      <td>doktorant, a są anioły anten 5g?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fb987b" id="fb987b">00:07:35</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>kurwa nie dziala</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#319e41" id="319e41">00:07:31</a></td>
+                      <td class="text-right"><strong>Ranx</strong></td>
+                      <td>backup anielski</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#319e41" id="319e41">00:07:31</a></td>
+                      <td colspan="2">Parts: Skretny</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8b255b" id="8b255b">00:07:29</a></td>
+                      <td colspan="2">Parts: Buk</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8ede50" id="8ede50">00:07:28</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, a i mam dłuższą od pana PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8ede50" id="8ede50">00:07:28</a></td>
+                      <td class="text-right"><strong>moih_</strong></td>
+                      <td><a href="https://twitter.com/priyom_org/status/1514635110892584960" target="_blank">https://twitter.com/priyom_org/status/1514635110892584960</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8d3450" id="8d3450">00:07:24</a></td>
+                      <td colspan="2">* <strong>moih_</strong> wyczolguje sie z lozka aby przekazac zloto</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8a4087" id="8a4087">00:07:21</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>Cyceron, lasiu BANUS GO </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bbc043" id="bbc043">00:07:18</a></td>
+                      <td class="text-right"><strong>bootycatch</strong></td>
+                      <td>ROŚNIJ DASZ RADE</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7983a4" id="7983a4">00:07:14</a></td>
+                      <td colspan="2">Parts: kotek_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e7a8d0" id="e7a8d0">00:07:12</a></td>
+                      <td class="text-right"><strong>bootycatch</strong></td>
+                      <td>anioł fifraka PepoG</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ee8347" id="ee8347">00:07:08</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#05409a" id="05409a">00:07:01</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>ANGERY </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#96f6e7" id="96f6e7">00:06:59</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td>SgtBruin, :point_left: KEKLEO </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ae935c" id="ae935c">00:06:46</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>miękka pała</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#346ddd" id="346ddd">00:06:40</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>giętka PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#415ca9" id="415ca9">00:06:33</a></td>
+                      <td colspan="2">germansheppard.poorchat.net sets mode: +h kotek_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#415ca9" id="415ca9">00:06:33</a></td>
+                      <td colspan="2">Joins: kotek_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9fd6ff" id="9fd6ff">00:06:24</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td><a href="https://imgur.com/MKXfL0Z" target="_blank">https://imgur.com/MKXfL0Z</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f8a07c" id="f8a07c">00:06:18</a></td>
+                      <td colspan="2">Parts: alfred_hugecock</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#93c983" id="93c983">00:06:15</a></td>
+                      <td class="text-right"><strong>SkyNet</strong></td>
+                      <td>Zupen z zasmaszken</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a24709" id="a24709">00:06:09</a></td>
+                      <td colspan="2">Joins: sarim11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ccda61" id="ccda61">00:06:08</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, jaka długość peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bfc1d8" id="bfc1d8">00:06:06</a></td>
+                      <td colspan="2">Parts: didwel</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#38c51c" id="38c51c">00:05:59</a></td>
+                      <td colspan="2">Parts: Xibron</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#56428a" id="56428a">00:05:57</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>aaa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e1add5" id="e1add5">00:05:53</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, konkrety różdżki poproszę peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e1add5" id="e1add5">00:05:53</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td><a href="https://imgur.com/hiB4fvk" target="_blank">https://imgur.com/hiB4fvk</a> Cyceron ale cos sciemnaija KEKM </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c3a7d3" id="c3a7d3">00:05:48</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td>Cyceron, Wiele Dumbledorowi ta różdżka nie pomogła KEKLEO </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#283146" id="283146">00:05:43</a></td>
+                      <td class="text-right"><strong>bootycatch</strong></td>
+                      <td>a co na anioł deklinacji?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8c574b" id="8c574b">00:05:41</a></td>
+                      <td colspan="2">Parts: Dekejpsz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2b39f6" id="2b39f6">00:05:39</a></td>
+                      <td class="text-right"><strong>SkyNet</strong></td>
+                      <td><a href="https://media.tenor.com/images/d2ad671efe68c6b8b7122a72fa0ac163/tenor.gif" target="_blank">https://media.tenor.com/images/d2ad671efe68c6b8b7122a72fa0ac163/tenor.gif</a> </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#718448" id="718448">00:05:36</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>Cyceron, no ja jestem z jego domu peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#af41b8" id="af41b8">00:05:32</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, a jaki rdzeń rozmiar i sztywność PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#be4346" id="be4346">00:05:14</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>EZ</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0f8e0d" id="0f8e0d">00:05:12</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>I CO LAMUSIE</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5c717b" id="5c717b">00:05:08</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, JA MAM CZARNĄ RÓŻDŻKĘ JAK DUMBLEDORE</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#028192" id="028192">00:05:04</a></td>
+                      <td colspan="2">Parts: culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#22969e" id="22969e">00:05:03</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>Cyceron, is dead, HE HEHEEE</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b0cb86" id="b0cb86">00:05:01</a></td>
+                      <td class="text-right"><strong>Ranx</strong></td>
+                      <td>a jak zajęczą wargę to od wkurwionego anioła?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#881950" id="881950">00:04:55</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>Cyceron, <a href="https://imgur.com/s1MFCUA" target="_blank">https://imgur.com/s1MFCUA</a> Cedar jak VOLDEMORT</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5dbd99" id="5dbd99">00:04:46</a></td>
+                      <td colspan="2">akita.poorchat.net sets mode: +v culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5dbd99" id="5dbd99">00:04:46</a></td>
+                      <td colspan="2">akita.poorchat.net sets mode: +h culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5dbd99" id="5dbd99">00:04:46</a></td>
+                      <td colspan="2">Joins: culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8f8347" id="8f8347">00:04:39</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>kundel peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a29547" id="a29547">00:04:32</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>jak tam pana kudel PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bf0488" id="bf0488">00:04:18</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, Mamba czarna jest wężem terytorialnym, i chociaż zazwyczaj ustępuje w obliczu zagrożenia, może się stać bardzo agresywna, gdy nie ma drogi odwrotu. Potrafi się wtedy bardzo wysoko podnieść – szczególnie duże węże są w stanie sięgnąć twarzy dorosłemu człowiekowi. Uderza szybko i wielokrotnie kąsa. Jedno ukąszenie wydziela od 100 do 400 mg jadu, gdy dla dorosłego człowieka śmiertelną dawką jest 10–15 mg PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4d76f8" id="4d76f8">00:03:58</a></td>
+                      <td colspan="2">Parts: pr0n</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4d76f8" id="4d76f8">00:03:58</a></td>
+                      <td colspan="2">Parts: Kemotnik</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f7b24e" id="f7b24e">00:03:50</a></td>
+                      <td colspan="2">Joins: pr0n</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ddb819" id="ddb819">00:03:44</a></td>
+                      <td class="text-right"><strong>SkyNet</strong></td>
+                      <td><a href="https://media.tenor.com/images/098fd127fb5926a8263e8393d8aea40f/tenor.gif" target="_blank">https://media.tenor.com/images/098fd127fb5926a8263e8393d8aea40f/tenor.gif</a> </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2ec967" id="2ec967">00:03:42</a></td>
+                      <td colspan="2">Parts: culturaldope</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e241c8" id="e241c8">00:03:33</a></td>
+                      <td colspan="2">Parts: bltzkrg22</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e45b19" id="e45b19">00:03:03</a></td>
+                      <td colspan="2">Parts: urbanqq</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#09ef23" id="09ef23">00:02:49</a></td>
+                      <td class="text-right"><strong>mcj</strong></td>
+                      <td>kradzież noża do kupy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a0d4cf" id="a0d4cf">00:02:40</a></td>
+                      <td class="text-right"><strong>Rastablasta</strong></td>
+                      <td>:knife: <a href="https://static.poorchat.net/emoticons/OPVGAqYGoQ/2x" target="_blank">https://static.poorchat.net/emoticons/OPVGAqYGoQ/2x</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1adf19" id="1adf19">00:02:37</a></td>
+                      <td colspan="2">Parts: kibu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a7707c" id="a7707c">00:01:58</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>doktorant, i sprzedał w końcu ten nóż Karny</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ac2239" id="ac2239">00:01:54</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ac2239" id="ac2239">00:01:54</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>czej bo robioe</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2a30b2" id="2a30b2">00:01:49</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>ActionBen </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7a0cad" id="7a0cad">00:01:45</a></td>
+                      <td colspan="2">Joins: bootycatch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#64fd8e" id="64fd8e">00:01:44</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, pokaż różdżkę PepeLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a1497c" id="a1497c">00:01:39</a></td>
+                      <td class="text-right"><strong>SkyNet</strong></td>
+                      <td>Rabin poszedł do barona</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#88eda4" id="88eda4">00:01:32</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>PepeLaugh :point_right: Cyceron </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#467757" id="467757">00:01:28</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, a nie jakiś pies metr z kapeluszem peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#22ffb6" id="22ffb6">00:01:10</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td>Cyceron, :point_left: KEKLEO </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cedbb7" id="cedbb7">00:01:09</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>SgtBruin, 4 metry czarnej mamby peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e34a0c" id="e34a0c">00:01:05</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>KALEKE DOSTAL KEKW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bca3b7" id="bca3b7">00:00:59</a></td>
+                      <td colspan="2">Parts: Bron</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bca3b7" id="bca3b7">00:00:59</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td>xD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9e2927" id="9e2927">00:00:56</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>XDDDDDDDDDDDDDDDD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#90c46b" id="90c46b">00:00:54</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td>Cyceron, jak tam kurwa miec patronusa bez nog? KEKW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ad2e9b" id="ad2e9b">00:00:44</a></td>
+                      <td class="text-right"><strong>Cyceron</strong></td>
+                      <td>peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ad2e9b" id="ad2e9b">00:00:44</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td>SgtBruin, EZ </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d85b3b" id="d85b3b">00:00:32</a></td>
+                      <td class="text-right"><strong>SgtBruin</strong></td>
+                      <td><a href="https://imgur.com/pqYhyvK" target="_blank">https://imgur.com/pqYhyvK</a> EZ </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b7f1d9" id="b7f1d9">00:00:17</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td>pff</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2022-04-19" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2022-04-20/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2022-04-20/4">4</a></li>
+                        <li><a href="/log/2022-04-20/5">5</a></li>
+                        <li><a href="/log/2022-04-20/6">6</a></li>
+                        <li><a href="/log/2022-04-20/7">7</a></li>
+                        <li class="active"><a href="/log/2022-04-20/8">8</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2022-04-21" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left"></div>
+            <div class="pull-right"><a href="http://tr0l.it/">tr0lit</a> <i class="fa fa-heart"></i> 2022</div>
+            <div class="clearfix"></div> 
+        </div>
+    </div>
+
+
+</body></html>

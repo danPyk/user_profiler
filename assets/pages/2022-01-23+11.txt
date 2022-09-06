@@ -1,0 +1,474 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0090FF">
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <title>Pancernik Statystyki</title>
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/onoloilfmbomfgdalcbbpnlnhibneofa">
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/pancernik/css/pancernik.css" rel="stylesheet">
+    <link href="/style-watch.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/js/bootstrap-datetimepicker.css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-jFSKtW5GA3kS9GVsQR+4Ih/7VfiOpMRm6DpnNNG9yfcdtusvmPoXrxdvp/vzlKrg"></script><script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/highstock.js"></script>
+    <script src="/js/highcharts.theme.js"></script>
+    <script src="/js/moment-with-locales.min.js"></script>
+    <script src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/js/pancernik.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><i class="icon-pancernik"></i> Statystyki</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Statystyki</a>
+                    </li>
+                    <li class="active">
+                        <a href="/logs">Archiwum</a>
+                    </li>
+                    <li>
+                        <a href="/karma">Karma</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://pancernik.info">Watch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="page-header">
+                <h3><i class="fa fa-calendar-o"></i> 2022-01-23</h3>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2022-01-22" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2022-01-23/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2022-01-23/7">7</a></li>
+                        <li><a href="/log/2022-01-23/8">8</a></li>
+                        <li><a href="/log/2022-01-23/9">9</a></li>
+                        <li><a href="/log/2022-01-23/10">10</a></li>
+                        <li class="active"><a href="/log/2022-01-23/11">11</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2022-01-24" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered" style="word-wrap: break-word;">
+                    <colgroup>
+                        <col style="width: 73px;">
+                        <col style="width: 188px;">
+                        <col style="width: auto">
+                    </colgroup>
+                    <tbody><tr>
+                      <td class="time"><a href="#fa53d9" id="fa53d9">00:08:44</a></td>
+                      <td class="text-right"><strong>Mensberk</strong></td>
+                      <td>Twój market ale to też tylko kilka województw </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0debd4" id="0debd4">00:08:43</a></td>
+                      <td colspan="2">beagle.poorchat.net sets mode: +v Czokowoko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0debd4" id="0debd4">00:08:43</a></td>
+                      <td colspan="2">Joins: Czokowoko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#89b058" id="89b058">00:08:42</a></td>
+                      <td colspan="2">Parts: Czokowoko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6221ff" id="6221ff">00:08:39</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>euroszpar jest u mnie </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f04a69" id="f04a69">00:08:38</a></td>
+                      <td colspan="2">Parts: joszi</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6f3783" id="6f3783">00:08:36</a></td>
+                      <td class="text-right"><strong>Dzien_Dobry</strong></td>
+                      <td>WTFF </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#eaad79" id="eaad79">00:08:31</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>nie wiem czy to to samo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c41580" id="c41580">00:08:28</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>spar albo eurospan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0d4524" id="0d4524">00:08:25</a></td>
+                      <td colspan="2">Parts: bejek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1d3e6e" id="1d3e6e">00:08:22</a></td>
+                      <td colspan="2">Joins: bejek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#53d886" id="53d886">00:08:21</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>YEP </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d9ca6f" id="d9ca6f">00:08:20</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>społem jest jeszcze, ale też nigdy nie byłem</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#eb8461" id="eb8461">00:08:15</a></td>
+                      <td colspan="2">Joins: joszi</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#58e610" id="58e610">00:08:11</a></td>
+                      <td class="text-right"><strong>Mensberk</strong></td>
+                      <td>sztetler, tak do zeszłego roku w Poznaniu widziałem jeszcze Piotra i Pawła teraz jest Sparem </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#103458" id="103458">00:08:10</a></td>
+                      <td colspan="2">Joins: fresko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4bba74" id="4bba74">00:08:01</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>spar? Susge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#08e261" id="08e261">00:07:54</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>teraz jest coś Weirdge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#66b9bc" id="66b9bc">00:07:45</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>u mni kiedyś był piotr i paweł sadKEK </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1ecfa6" id="1ecfa6">00:07:37</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>spar? peepoWTF </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e1c3d9" id="e1c3d9">00:07:30</a></td>
+                      <td colspan="2">Joins: Derech</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d83164" id="d83164">00:07:24</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>juz chyba caly nawet</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#61579c" id="61579c">00:07:22</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>ale piotra i pawla to spar w wiekszosci przejal</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e4f2d4" id="e4f2d4">00:07:21</a></td>
+                      <td class="text-right"><strong>Pancernik</strong></td>
+                      <td>pajong był ostatnio widziany 2 godziny temu.</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e4f2d4" id="e4f2d4">00:07:21</a></td>
+                      <td class="text-right"><strong>moih_</strong></td>
+                      <td>.seen pajong</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#475d59" id="475d59">00:07:15</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>piotr i pawel drogie głowno</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e2f0dd" id="e2f0dd">00:07:13</a></td>
+                      <td class="text-right"><strong>moih_</strong></td>
+                      <td>.senn pajong</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2e4a59" id="2e4a59">00:07:01</a></td>
+                      <td class="text-right"><strong>rolnik34</strong></td>
+                      <td>jest chyba tez kosciol pod wezwaniem piotra i pawla KEKM </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#25c0de" id="25c0de">00:06:37</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>w lecrerc raz byłem i mieli kozackie rzeczy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#87d1ce" id="87d1ce">00:06:34</a></td>
+                      <td colspan="2">Parts: Bron</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#491542" id="491542">00:06:21</a></td>
+                      <td colspan="2">Parts: Rokuto</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#09d5b1" id="09d5b1">00:06:04</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>piotr i paweł nigdy nie widziałem na oczy. widziałem tylko reklame</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#69a78e" id="69a78e">00:05:53</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#69a78e" id="69a78e">00:05:53</a></td>
+                      <td colspan="2">Parts: eternal_slavo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#54afe4" id="54afe4">00:05:29</a></td>
+                      <td colspan="2">germansheppard.poorchat.net sets mode: +v Czokowoko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#54afe4" id="54afe4">00:05:29</a></td>
+                      <td colspan="2">Joins: Czokowoko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b559a5" id="b559a5">00:05:27</a></td>
+                      <td colspan="2">Parts: Czokowoko</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#73d8ec" id="73d8ec">00:05:25</a></td>
+                      <td class="text-right"><strong>Mensberk</strong></td>
+                      <td>U mnie z takich mniejszych sieci jest jeszcze polomarket i społem które nie może zdechnąć. Na wschodzie za to są np Topazy. </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a414a1" id="a414a1">00:05:22</a></td>
+                      <td class="text-right"><strong>rolnik34</strong></td>
+                      <td>zwieracz, takie bozia zrobila w tym serialu to byl chyba wersja czlowieka alpha KEKW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7c6531" id="7c6531">00:05:11</a></td>
+                      <td colspan="2">akita.poorchat.net sets mode: +v Etherlord877</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7c6531" id="7c6531">00:05:11</a></td>
+                      <td colspan="2">Joins: Etherlord877</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5ebeb3" id="5ebeb3">00:04:31</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>rolnik34, WeirdDude ktoś nasrał</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#71746e" id="71746e">00:04:21</a></td>
+                      <td class="text-right"><strong>rolnik34</strong></td>
+                      <td>Rastablasta, szkot peepoThink</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6a303d" id="6a303d">00:04:19</a></td>
+                      <td class="text-right"><strong>Rastablasta</strong></td>
+                      <td>nie ten czat KEKW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ae6d31" id="ae6d31">00:04:12</a></td>
+                      <td colspan="2">Parts: policjant</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7fab39" id="7fab39">00:04:05</a></td>
+                      <td colspan="2">Parts: Koxen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#faf536" id="faf536">00:04:01</a></td>
+                      <td class="text-right"><strong>Rastablasta</strong></td>
+                      <td>facet w spódnicy peepoThink </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d1a4da" id="d1a4da">00:03:49</a></td>
+                      <td colspan="2">Parts: nanenab666gtxtdi</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4f3057" id="4f3057">00:03:33</a></td>
+                      <td colspan="2">Parts: Uaidak</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a3502d" id="a3502d">00:03:27</a></td>
+                      <td colspan="2">Joins: nanenab666gtxtdi</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#24e4b1" id="24e4b1">00:03:18</a></td>
+                      <td class="text-right"><strong>rolnik34</strong></td>
+                      <td><a href="https://villains.fandom.com/wiki/Leviathan_(Supernatural" target="_blank">https://villains.fandom.com/wiki/Leviathan_(Supernatural</a>)</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a61daf" id="a61daf">00:03:11</a></td>
+                      <td class="text-right"><strong>rolnik34</strong></td>
+                      <td>zwieracz, bez gospodarza wyglada jak kupa <a href="https://static.wikia.nocookie.net/villains/images/9/9d/LevathianTrueForm.jpg/revision/latest?cb=20190103135425" target="_blank">https://static.wikia.nocookie.net/villains/images/9/9d/LevathianTrueForm.jpg/revision/latest?cb=20190103135425</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#64b970" id="64b970">00:02:35</a></td>
+                      <td class="text-right"><strong>Rastablasta</strong></td>
+                      <td>jak pierwszy raz usłyszałem o sieci sklepów lewiatan, to chyba gorzej nazwać się nie mogli, czemu nie belzebub na przykład KEKW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#17d723" id="17d723">00:02:32</a></td>
+                      <td class="text-right"><strong>Rokuto</strong></td>
+                      <td>w kosmosie też żyją <a href="https://i.imgur.com/jOQhSww.jpg" target="_blank">https://i.imgur.com/jOQhSww.jpg</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9f4b34" id="9f4b34">00:02:28</a></td>
+                      <td colspan="2">Parts: Hudraulik</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a3366e" id="a3366e">00:02:26</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>rolnik34, peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#504dae" id="504dae">00:02:24</a></td>
+                      <td colspan="2">dalmatian.poorchat.net sets mode: +v Hudraulik</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#504dae" id="504dae">00:02:24</a></td>
+                      <td colspan="2">Joins: Hudraulik</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e5cd07" id="e5cd07">00:02:09</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>Lefjutan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a8af31" id="a8af31">00:02:00</a></td>
+                      <td class="text-right"><strong>rolnik34</strong></td>
+                      <td><a href="https://img4.wikia.nocookie.net/__cb20130422205004/supernatural/images/2/20/7x06Leviathan.png" target="_blank">https://img4.wikia.nocookie.net/__cb20130422205004/supernatural/images/2/20/7x06Leviathan.png</a> w serialu jak ludzika przejaly</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#62a0fa" id="62a0fa">00:01:39</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>Rastablasta, albo sklep Kappa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#76a624" id="76a624">00:01:26</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>no najcześciej na morskiego potwora mówią lewiatan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b14431" id="b14431">00:01:21</a></td>
+                      <td class="text-right"><strong>Rastablasta</strong></td>
+                      <td>zwieracz, ta, potwór morski ze starego testamentu KEKM </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7b497e" id="7b497e">00:01:19</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>:spouting_whale: </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#30eb4c" id="30eb4c">00:01:09</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>Riper, o też troche</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#872f53" id="872f53">00:00:59</a></td>
+                      <td colspan="2">Joins: Rastablasta</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#34c6b1" id="34c6b1">00:00:58</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>zwieracz, lewiatan sie kojartzy z wielorybem mi Hmmm </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5ac500" id="5ac500">00:00:56</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>Hmmm </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b49443" id="b49443">00:00:52</a></td>
+                      <td class="text-right"><strong>Rokuto</strong></td>
+                      <td>Hmmm </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b49443" id="b49443">00:00:52</a></td>
+                      <td colspan="2">Joins: morska</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7d5464" id="7d5464">00:00:51</a></td>
+                      <td class="text-right"><strong>sztetler</strong></td>
+                      <td>TakBylo </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#de2c65" id="de2c65">00:00:37</a></td>
+                      <td class="text-right"><strong>zwieracz</strong></td>
+                      <td>lewiatan to mi sie kojarzy z jakimś wielkim stworem takim powolnym, który sobie gdzieś sunie w oddali w sobie tylko znanym celu peepoThink </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e3f841" id="e3f841">00:00:36</a></td>
+                      <td colspan="2">Parts: Woroderex</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#88156f" id="88156f">00:00:30</a></td>
+                      <td colspan="2">Parts: Onfir</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1a77a4" id="1a77a4">00:00:17</a></td>
+                      <td colspan="2">Joins: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cfb336" id="cfb336">00:00:11</a></td>
+                      <td colspan="2">Parts: tarzan1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b69203" id="b69203">00:00:05</a></td>
+                      <td colspan="2">Parts: morska</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2022-01-22" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2022-01-23/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2022-01-23/7">7</a></li>
+                        <li><a href="/log/2022-01-23/8">8</a></li>
+                        <li><a href="/log/2022-01-23/9">9</a></li>
+                        <li><a href="/log/2022-01-23/10">10</a></li>
+                        <li class="active"><a href="/log/2022-01-23/11">11</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2022-01-24" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left"></div>
+            <div class="pull-right"><a href="http://tr0l.it/">tr0lit</a> <i class="fa fa-heart"></i> 2022</div>
+            <div class="clearfix"></div> 
+        </div>
+    </div>
+
+
+</body></html>

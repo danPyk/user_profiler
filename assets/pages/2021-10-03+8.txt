@@ -1,0 +1,242 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0090FF">
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <title>Pancernik Statystyki</title>
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/onoloilfmbomfgdalcbbpnlnhibneofa">
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/pancernik/css/pancernik.css" rel="stylesheet">
+    <link href="/style-watch.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/js/bootstrap-datetimepicker.css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-jFSKtW5GA3kS9GVsQR+4Ih/7VfiOpMRm6DpnNNG9yfcdtusvmPoXrxdvp/vzlKrg"></script><script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/highstock.js"></script>
+    <script src="/js/highcharts.theme.js"></script>
+    <script src="/js/moment-with-locales.min.js"></script>
+    <script src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/js/pancernik.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><i class="icon-pancernik"></i> Statystyki</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Statystyki</a>
+                    </li>
+                    <li class="active">
+                        <a href="/logs">Archiwum</a>
+                    </li>
+                    <li>
+                        <a href="/karma">Karma</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://pancernik.info">Watch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="page-header">
+                <h3><i class="fa fa-calendar-o"></i> 2021-10-03</h3>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2021-10-02" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2021-10-03/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2021-10-03/4">4</a></li>
+                        <li><a href="/log/2021-10-03/5">5</a></li>
+                        <li><a href="/log/2021-10-03/6">6</a></li>
+                        <li><a href="/log/2021-10-03/7">7</a></li>
+                        <li class="active"><a href="/log/2021-10-03/8">8</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2021-10-04" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered" style="word-wrap: break-word;">
+                    <colgroup>
+                        <col style="width: 73px;">
+                        <col style="width: 188px;">
+                        <col style="width: auto">
+                    </colgroup>
+                    <tbody><tr>
+                      <td class="time"><a href="#d7f16f" id="d7f16f">00:01:24</a></td>
+                      <td colspan="2">Joins: BloodDeath</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#22ca07" id="22ca07">00:01:14</a></td>
+                      <td colspan="2">Parts: BloodDeath</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#325211" id="325211">00:01:13</a></td>
+                      <td class="text-right"><strong>witam_serdecznie</strong></td>
+                      <td>Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a93fa3" id="a93fa3">00:01:12</a></td>
+                      <td colspan="2">Joins: BloodDeath</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#373a53" id="373a53">00:01:11</a></td>
+                      <td colspan="2">Parts: BloodDeath</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c3b1d6" id="c3b1d6">00:01:08</a></td>
+                      <td class="text-right"><strong>Naprany</strong></td>
+                      <td>peepoSad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fd1d83" id="fd1d83">00:01:05</a></td>
+                      <td class="text-right"><strong>MARO</strong></td>
+                      <td>"kozak w necie, pizda w świecie" z</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#948eb6" id="948eb6">00:00:57</a></td>
+                      <td class="text-right"><strong>witam_serdecznie</strong></td>
+                      <td>trzymaj garde piesci twarde</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#948eb6" id="948eb6">00:00:57</a></td>
+                      <td colspan="2">Parts: siewca</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aa4595" id="aa4595">00:00:56</a></td>
+                      <td class="text-right"><strong>hazardzista_janek</strong></td>
+                      <td>peepoSad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#460127" id="460127">00:00:55</a></td>
+                      <td class="text-right"><strong>Rain</strong></td>
+                      <td>Taka legenda odchodzi Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1f35a9" id="1f35a9">00:00:54</a></td>
+                      <td colspan="2">Joins: siewca</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0c4126" id="0c4126">00:00:52</a></td>
+                      <td class="text-right"><strong>Nigglet</strong></td>
+                      <td>Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0325d4" id="0325d4">00:00:41</a></td>
+                      <td colspan="2">Joins: BloodDeath</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aee7cc" id="aee7cc">00:00:40</a></td>
+                      <td colspan="2">Parts: BloodDeath</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#41c106" id="41c106">00:00:39</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a4c4c2" id="a4c4c2">00:00:36</a></td>
+                      <td class="text-right"><strong>sds</strong></td>
+                      <td>chińczyk</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d15eb2" id="d15eb2">00:00:35</a></td>
+                      <td class="text-right"><strong>Tyberii</strong></td>
+                      <td>pepeW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#11150e" id="11150e">00:00:30</a></td>
+                      <td colspan="2">Joins: BloodDeath</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#28115d" id="28115d">00:00:29</a></td>
+                      <td colspan="2">Parts: BloodDeath</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#942601" id="942601">00:00:28</a></td>
+                      <td class="text-right"><strong>PrezeeS7_</strong></td>
+                      <td>Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#16a1f7" id="16a1f7">00:00:24</a></td>
+                      <td colspan="2">Joins: mcj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4ddf20" id="4ddf20">00:00:13</a></td>
+                      <td class="text-right"><strong>Nigglet</strong></td>
+                      <td>xD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c5d6eb" id="c5d6eb">00:00:10</a></td>
+                      <td class="text-right"><strong>Puhh_</strong></td>
+                      <td>sylwester rozwale ci jenge wardega</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c1b621" id="c1b621">00:00:06</a></td>
+                      <td class="text-right"><strong>witam_serdecznie</strong></td>
+                      <td>PrzykraSprawa </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8b7d4f" id="8b7d4f">00:00:02</a></td>
+                      <td colspan="2">Joins: Bron</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#33d388" id="33d388">00:00:00</a></td>
+                      <td colspan="2">Parts: Bron</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2021-10-02" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2021-10-03/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2021-10-03/4">4</a></li>
+                        <li><a href="/log/2021-10-03/5">5</a></li>
+                        <li><a href="/log/2021-10-03/6">6</a></li>
+                        <li><a href="/log/2021-10-03/7">7</a></li>
+                        <li class="active"><a href="/log/2021-10-03/8">8</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2021-10-04" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left"></div>
+            <div class="pull-right"><a href="http://tr0l.it/">tr0lit</a> <i class="fa fa-heart"></i> 2022</div>
+            <div class="clearfix"></div> 
+        </div>
+    </div>
+
+
+</body></html>

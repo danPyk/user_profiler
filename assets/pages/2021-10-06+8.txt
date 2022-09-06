@@ -1,0 +1,809 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0090FF">
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <title>Pancernik Statystyki</title>
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/onoloilfmbomfgdalcbbpnlnhibneofa">
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/pancernik/css/pancernik.css" rel="stylesheet">
+    <link href="/style-watch.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/js/bootstrap-datetimepicker.css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-jFSKtW5GA3kS9GVsQR+4Ih/7VfiOpMRm6DpnNNG9yfcdtusvmPoXrxdvp/vzlKrg"></script><script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/highstock.js"></script>
+    <script src="/js/highcharts.theme.js"></script>
+    <script src="/js/moment-with-locales.min.js"></script>
+    <script src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/js/pancernik.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><i class="icon-pancernik"></i> Statystyki</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Statystyki</a>
+                    </li>
+                    <li class="active">
+                        <a href="/logs">Archiwum</a>
+                    </li>
+                    <li>
+                        <a href="/karma">Karma</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://pancernik.info">Watch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="page-header">
+                <h3><i class="fa fa-calendar-o"></i> 2021-10-06</h3>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2021-10-05" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2021-10-06/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2021-10-06/4">4</a></li>
+                        <li><a href="/log/2021-10-06/5">5</a></li>
+                        <li><a href="/log/2021-10-06/6">6</a></li>
+                        <li><a href="/log/2021-10-06/7">7</a></li>
+                        <li class="active"><a href="/log/2021-10-06/8">8</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2021-10-07" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered" style="word-wrap: break-word;">
+                    <colgroup>
+                        <col style="width: 73px;">
+                        <col style="width: 188px;">
+                        <col style="width: auto">
+                    </colgroup>
+                    <tbody><tr>
+                      <td class="time"><a href="#2973b8" id="2973b8">00:11:08</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>i rękawy w paski do tego</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dfe834" id="dfe834">00:11:07</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, #teamogrzewaniepodłogowe</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#145f85" id="145f85">00:11:06</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>w sumie kurde chyba miałam kiedyś jakieś!</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#33efad" id="33efad">00:11:04</a></td>
+                      <td colspan="2">Parts: witam_serdecznie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#98f5da" id="98f5da">00:11:03</a></td>
+                      <td class="text-right"><strong>xellos</strong></td>
+                      <td>doktorant, "komu przeszkadza zmiana czasu" Kappa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#21a9e4" id="21a9e4">00:11:02</a></td>
+                      <td class="text-right"><strong>TheNerwujacy</strong></td>
+                      <td>cała geneza zmiany czasu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#21a9e4" id="21a9e4">00:11:02</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>doktorant szuka kiedy zmiana czasu w artykułach naukowych Kappa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#193ad0" id="193ad0">00:10:53</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>#teamuwolnićstopywdomu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#48be19" id="48be19">00:10:45</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, ale zakolanówki to nadskarpety dla nadludzi</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7fe41b" id="7fe41b">00:10:37</a></td>
+                      <td colspan="2">Parts: potatoDX</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#18a7c3" id="18a7c3">00:10:33</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td>doktorant, kiedy będą jakieś porządne nagrody za punkty na twitch? </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#18a7c3" id="18a7c3">00:10:33</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>chociaż ja nienawidzę skarpet itd w domu XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0be418" id="0be418">00:10:32</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>to sobie zamówię na zimę, bo nie lubię dlugich spodni Kappa </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5c7540" id="5c7540">00:10:31</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, polecam</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#03ebb2" id="03ebb2">00:10:30</a></td>
+                      <td class="text-right"><strong>xellos</strong></td>
+                      <td>doktorant, jaki jest twój ulubiony portal informacyjny i dlaczego wykop? Kappa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#eb6aa6" id="eb6aa6">00:10:29</a></td>
+                      <td colspan="2">Joins: potatoDX</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#43a280" id="43a280">00:10:22</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>yoda415, zapamiętam, jadę do Pepco po takie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2d080c" id="2d080c">00:10:17</a></td>
+                      <td colspan="2">Parts: wawel105</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e3070b" id="e3070b">00:10:14</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>POGGERS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#879819" id="879819">00:10:12</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>doktorant, super serial, dobrze ze nie kręcili miliona sezonów tylko dwa porządne zrobili</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5b7251" id="5b7251">00:10:11</a></td>
+                      <td class="text-right"><strong>pajong</strong></td>
+                      <td>Riper, pewnie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4996b0" id="4996b0">00:10:10</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>pajong, pair programing, aka duck switch, klasyka</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b87ec4" id="b87ec4">00:10:09</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, każdy programista musi mieć</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c18b6c" id="c18b6c">00:10:04</a></td>
+                      <td class="text-right"><strong>CrazyVet</strong></td>
+                      <td>pajong, PogChamp </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c18b6c" id="c18b6c">00:10:04</a></td>
+                      <td class="text-right"><strong>pajong</strong></td>
+                      <td>yourfan, bez tego softu nie napiszesz </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c18b6c" id="c18b6c">00:10:04</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>pajong, a te z prawej też mogą być? Pepega </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b72e8f" id="b72e8f">00:09:54</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>sexy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6443d7" id="6443d7">00:09:49</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>lasiu, kiedy dodasz pepechad?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3b2837" id="3b2837">00:09:46</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>prawdziwa męska moda</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#14269f" id="14269f">00:09:39</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>pajong, ideolo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#382d36" id="382d36">00:09:35</a></td>
+                      <td class="text-right"><strong>pajong</strong></td>
+                      <td>Pepega </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#232418" id="232418">00:09:33</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>doktorant, młody papież KEKM </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#989952" id="989952">00:09:30</a></td>
+                      <td class="text-right"><strong>pajong</strong></td>
+                      <td>Riper, drugi i ostatni raz ci proponuję, kupuj i lecimy pair programming: <a href="https://i.kym-cdn.com/entries/icons/original/000/031/279/Screen_Shot_2019-09-26_at_1.07.31_PM.jpg" target="_blank">https://i.kym-cdn.com/entries/icons/original/000/031/279/Screen_Shot_2019-09-26_at_1.07.31_PM.jpg</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6b319f" id="6b319f">00:09:23</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Riper, możesz spróbować podpiąć w pas do pończoch</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b68ff1" id="b68ff1">00:09:22</a></td>
+                      <td class="text-right"><strong>Kosiciel</strong></td>
+                      <td>PepeLaugh <a href="https://dorzeczy.pl/obserwator-mediow/207541/rzad-planuje-kary-za-fake-newsy-o-covid-19.html" target="_blank">https://dorzeczy.pl/obserwator-mediow/207541/rzad-planuje-kary-za-fake-newsy-o-covid-19.html</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0bd585" id="0bd585">00:09:18</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>Riper, mówisz, że to przez to? Kurde..</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#90a337" id="90a337">00:09:16</a></td>
+                      <td colspan="2">Joins: Kosiciel</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1fc34c" id="1fc34c">00:09:10</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>doktorant, The knick?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#192001" id="192001">00:09:04</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>ja nie mam i dlatego mi słabo idzie Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4289d6" id="4289d6">00:08:49</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>Bez tego się po prostu nie da</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#17d1df" id="17d1df">00:08:47</a></td>
+                      <td class="text-right"><strong>pajong</strong></td>
+                      <td>No i to rozumiem EZ </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b8f711" id="b8f711">00:08:43</a></td>
+                      <td colspan="2">Joins: osk4r</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#24a727" id="24a727">00:08:41</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>pajong, wiadomo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c47c96" id="c47c96">00:08:33</a></td>
+                      <td class="text-right"><strong>pajong</strong></td>
+                      <td>AkiM1223, POGGERS też nosisz programming socks?!</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#517696" id="517696">00:08:31</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Ja to z firmy dostałem getry na zimę</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4449dd" id="4449dd">00:08:29</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>też chcę zobaczyć XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4449dd" id="4449dd">00:08:29</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>pepeTest </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2509f6" id="2509f6">00:08:16</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>AkiM1223, pokasz </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a5bf38" id="a5bf38">00:08:06</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, <a href="https://i.kym-cdn.com/entries/icons/original/000/022/900/704.jpg" target="_blank">https://i.kym-cdn.com/entries/icons/original/000/022/900/704.jpg</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aa6492" id="aa6492">00:07:55</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>Jedyny komfortowy sposób na pisanie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8e53c5" id="8e53c5">00:07:40</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>nawet ja mam</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3c58be" id="3c58be">00:07:37</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>No to w chuj IT</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#27f0ed" id="27f0ed">00:07:36</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>yoda415, pingwin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d6dc06" id="d6dc06">00:07:28</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>AkiM1223, nie dorobiłam się jeszcze XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d6dc06" id="d6dc06">00:07:28</a></td>
+                      <td class="text-right"><strong>TheNerwujacy</strong></td>
+                      <td>PoleWidzenia </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#68a06a" id="68a06a">00:07:20</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, czyli zwierze mówisz? PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ae6875" id="ae6875">00:07:19</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>doktorant, jeszcze stań w słońcu pełnym</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3e6418" id="3e6418">00:07:12</a></td>
+                      <td colspan="2">Parts: Wapniak</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3b0457" id="3b0457">00:07:06</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>yoda415, tak? Pixeliada masz programming socks?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ccdce6" id="ccdce6">00:06:58</a></td>
+                      <td colspan="2">Parts: Tiananmen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cdf8ba" id="cdf8ba">00:06:46</a></td>
+                      <td colspan="2">Joins: Tiananmen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#45743d" id="45743d">00:06:37</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>AkiM1223, no bywa i tak, ale ona sama jest z IT</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7e7681" id="7e7681">00:06:31</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>AkiM1223, to nie mam co tracić peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a904cb" id="a904cb">00:06:23</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>bardziej pewnie ze mnie jedno ze zwierząt z IT było XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5c7727" id="5c7727">00:06:19</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>I wracają jak stracą dom, samochód i godność</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#138831" id="138831">00:06:18</a></td>
+                      <td colspan="2">Joins: KotLesny</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#52d4c6" id="52d4c6">00:06:17</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>AkiM1223, POGGERS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#73f3dc" id="73f3dc">00:06:15</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>peepoThink </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#4b9c6d" id="4b9c6d">00:06:08</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, ale księżniczna czy zwierzęta z IT?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bcee84" id="bcee84">00:06:07</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>potem znikają z czatu</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#59130a" id="59130a">00:06:03</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>zawsze tak jest</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ed8532" id="ed8532">00:06:02</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>Ranx, monkaS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#52eac7" id="52eac7">00:05:59</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>#żonaszukaprzegrywa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#198b4a" id="198b4a">00:05:56</a></td>
+                      <td colspan="2">Joins: Wapniak</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#19c0b2" id="19c0b2">00:05:51</a></td>
+                      <td class="text-right"><strong>Ranx</strong></td>
+                      <td>kuktas88, KEKW <a href="https://img-9gag-fun.9cache.com/photo/6556291_460s.jpg" target="_blank">https://img-9gag-fun.9cache.com/photo/6556291_460s.jpg</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#964fd0" id="964fd0">00:05:44</a></td>
+                      <td colspan="2">Parts: trasek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#936c55" id="936c55">00:05:42</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>źle to brzmi chyba XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f47123" id="f47123">00:05:31</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>i teraz siedzis z nami... hmm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2e91ec" id="2e91ec">00:05:25</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, umiesz rozmawiać ze zwięrzętami? księżniczka mat-infa KEKLEO </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2e91ec" id="2e91ec">00:05:25</a></td>
+                      <td colspan="2">Parts: Tiananmen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c89246" id="c89246">00:05:18</a></td>
+                      <td colspan="2">Joins: Tiananmen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#349758" id="349758">00:05:17</a></td>
+                      <td colspan="2">Parts: alukam</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#13f950" id="13f950">00:05:09</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>doktorant, a awinionie YEP </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c62fe0" id="c62fe0">00:05:06</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>yoda415, to ten cięzko sie jedzie w 300 osób, były jakieś studenckie, ale ja nigdy nie byłem sadKEK </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c245b8" id="c245b8">00:04:58</a></td>
+                      <td colspan="2">dachshund.poorchat.net sets mode: +h AkiM1223</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c245b8" id="c245b8">00:04:58</a></td>
+                      <td colspan="2">Joins: AkiM1223</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3cd67c" id="3cd67c">00:04:53</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>Ranx, senator palpatine monkaS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c3e7e7" id="c3e7e7">00:04:52</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>yoda415, jedna z trzech dziewczyn w klasie, oni raczej nie podchodzili do innych bab, a mnie znali, to się nie bali XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6ddbda" id="6ddbda">00:04:42</a></td>
+                      <td colspan="2">Parts: KRC4</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#39d670" id="39d670">00:04:37</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Riper, ja na studiach miałem wyjazdy po 4 tygodnie całego roku</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2fbd55" id="2fbd55">00:04:36</a></td>
+                      <td colspan="2">Parts: zEasy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2fbd55" id="2fbd55">00:04:36</a></td>
+                      <td colspan="2">Joins: KRC4</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#83cfac" id="83cfac">00:04:35</a></td>
+                      <td class="text-right"><strong>xellos</strong></td>
+                      <td>doktorant, ale uznawali siebie nawzajem?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cc1b59" id="cc1b59">00:04:33</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>doktorant, jak było dwóch to i spoko było Kapp</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ea143d" id="ea143d">00:04:32</a></td>
+                      <td class="text-right"><strong>TeddDeireadh</strong></td>
+                      <td><a href="https://imgur.com/a/Hsrd473" target="_blank">https://imgur.com/a/Hsrd473</a> monkaGiga </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d5d2c0" id="d5d2c0">00:04:29</a></td>
+                      <td colspan="2">Joins: zEasy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#775ad4" id="775ad4">00:04:28</a></td>
+                      <td colspan="2">Parts: zEasy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#775ad4" id="775ad4">00:04:28</a></td>
+                      <td class="text-right"><strong>Ranx</strong></td>
+                      <td>nawet podobny <a href="https://www.vaticannews.va/content/dam/vaticannews/images-multimedia/papa-ratzinger/00388-n.1801%20Messa%2011-06-2010%20ok.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.750.422.jpeg" target="_blank">https://www.vaticannews.va/content/dam/vaticannews/images-multimedia/papa-ratzinger/00388-n.1801%20Messa%2011-06-2010%20ok.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.750.422.jpeg</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0c7eba" id="0c7eba">00:04:26</a></td>
+                      <td colspan="2">beagle.poorchat.net sets mode: +v quasintus9</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0c7eba" id="0c7eba">00:04:26</a></td>
+                      <td colspan="2">Joins: quasintus9</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#259d74" id="259d74">00:04:25</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>trashD </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b33d25" id="b33d25">00:04:22</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>takie 1 rok studiów peepoHappy </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#642124" id="642124">00:04:16</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, no królowa salonów IT</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3ae427" id="3ae427">00:04:12</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>kiedyś to było Feels </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ae7c0a" id="ae7c0a">00:04:04</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>papież nigdy by tak nie zrobił </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0dfc8f" id="0dfc8f">00:04:00</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>Przynajmniej do czasu aż nie popili na tyle, że bardziej się opierali niż tańczyli </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#093014" id="093014">00:03:35</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>a na studniówce byłam z chłopakiem, który cały wieczór marudził i miał wszystko w dupie.. Dobrze, że chodziłam do technikum informatycznego i było z kim tańczyć xd</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0d4e34" id="0d4e34">00:03:31</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>Ranx, KEKM </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e847a0" id="e847a0">00:03:14</a></td>
+                      <td class="text-right"><strong>Pancernik</strong></td>
+                      <td>casseith był ostatnio widziany 4 godziny temu.</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e847a0" id="e847a0">00:03:14</a></td>
+                      <td class="text-right"><strong>Ranx</strong></td>
+                      <td>.seen casseith</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5808c4" id="5808c4">00:03:01</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>yoda415, półmetek u mnie nie wypalił w ogóle i nie było XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e63c8a" id="e63c8a">00:02:51</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, miły papaj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9b877d" id="9b877d">00:02:45</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td><a href="https://www.wykop.pl/cdn/c3201142/comment_1633432382yeUjXLSJUDudZhf3Q8gisC,w400.jpg" target="_blank">https://www.wykop.pl/cdn/c3201142/comment_1633432382yeUjXLSJUDudZhf3Q8gisC,w400.jpg</a> SOON monkaS</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dd648c" id="dd648c">00:02:43</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, ale studniówka była EZ, gorzej z półmetkiem bo zasnąłem pod prysznicem</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8d0cfe" id="8d0cfe">00:02:42</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>Jak ja nie cierpię tego dziada...</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fe702f" id="fe702f">00:02:19</a></td>
+                      <td colspan="2">Parts: Tiananmen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#50576d" id="50576d">00:02:16</a></td>
+                      <td class="text-right"><strong>Frambos</strong></td>
+                      <td>Witam Pana Doktora pepeTest </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e93405" id="e93405">00:02:03</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>kulturalnie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9f01d2" id="9f01d2">00:02:00</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, no cóż, jestem ze wschodu więc lało się z butelki</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#936456" id="936456">00:01:59</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>ja sobie obiecałem, że nie będę pił na studniówce</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ce7942" id="ce7942">00:01:49</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>doktorant, jak grałeś w halflife to zawór wskazywał ci droge?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f844ad" id="f844ad">00:01:48</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>nie tylko uczniowie, nauczyciele też</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#479877" id="479877">00:01:41</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>yoda415, u nas alkohol przelewali do dzbanków, żeby nie było widać na kamerach XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fe0207" id="fe0207">00:01:39</a></td>
+                      <td colspan="2">Joins: Tiananmen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#962752" id="962752">00:01:36</a></td>
+                      <td colspan="2">Joins: Frambos</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e0154f" id="e0154f">00:01:24</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, w dzbankach?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d670ec" id="d670ec">00:01:23</a></td>
+                      <td colspan="2">Parts: Tsubasa8</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#65a5bb" id="65a5bb">00:01:22</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>doktorant, czy całe życie prześladują cię zawory? </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9998c7" id="9998c7">00:01:07</a></td>
+                      <td colspan="2">Parts: quasintus9</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ad3d90" id="ad3d90">00:01:00</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>doktorant, brzmiał jak scooby doo</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#471bc2" id="471bc2">00:00:59</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>doktorant, zawór, dobrz siękojarzy</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#97f168" id="97f168">00:00:57</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>i weź tu ogarnij gdzie w tych dzbankach na stole woda, a gdzie wóda XD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#97f168" id="97f168">00:00:57</a></td>
+                      <td class="text-right"><strong>witam_serdecznie</strong></td>
+                      <td>KEKW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5d2ec7" id="5d2ec7">00:00:56</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>KEKW</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b0f68a" id="b0f68a">00:00:46</a></td>
+                      <td class="text-right"><strong>daarek</strong></td>
+                      <td>Ranx, aaa HAhaa </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2eb572" id="2eb572">00:00:40</a></td>
+                      <td class="text-right"><strong>TheNerwujacy</strong></td>
+                      <td>CoDoKur </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8fad60" id="8fad60">00:00:39</a></td>
+                      <td class="text-right"><strong>kuktas88</strong></td>
+                      <td>KEKW</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#30e157" id="30e157">00:00:33</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>Pixeliada, CoDoKur </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a3e1da" id="a3e1da">00:00:21</a></td>
+                      <td class="text-right"><strong>Pixeliada</strong></td>
+                      <td>na studniówce byłam kierowcą :c</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a3e1da" id="a3e1da">00:00:21</a></td>
+                      <td colspan="2">Parts: Kairen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#66c93b" id="66c93b">00:00:20</a></td>
+                      <td colspan="2">Joins: Kairen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f89bdc" id="f89bdc">00:00:19</a></td>
+                      <td class="text-right"><strong>TheNerwujacy</strong></td>
+                      <td>xD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#deceaa" id="deceaa">00:00:16</a></td>
+                      <td class="text-right"><strong>Ranx</strong></td>
+                      <td>daarek, o tańczenie Poloneza FaceP </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6e5bce" id="6e5bce">00:00:12</a></td>
+                      <td colspan="2">Joins: Aleis12</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2021-10-05" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2021-10-06/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2021-10-06/4">4</a></li>
+                        <li><a href="/log/2021-10-06/5">5</a></li>
+                        <li><a href="/log/2021-10-06/6">6</a></li>
+                        <li><a href="/log/2021-10-06/7">7</a></li>
+                        <li class="active"><a href="/log/2021-10-06/8">8</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2021-10-07" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left"></div>
+            <div class="pull-right"><a href="http://tr0l.it/">tr0lit</a> <i class="fa fa-heart"></i> 2022</div>
+            <div class="clearfix"></div> 
+        </div>
+    </div>
+
+
+</body></html>

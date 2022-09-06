@@ -1,0 +1,845 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0090FF">
+    <link rel="shortcut icon" href="/images/favicon.png">
+
+    <title>Pancernik Statystyki</title>
+
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/onoloilfmbomfgdalcbbpnlnhibneofa">
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/pancernik/css/pancernik.css" rel="stylesheet">
+    <link href="/style-watch.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/js/bootstrap-datetimepicker.css" rel="stylesheet">
+
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-jFSKtW5GA3kS9GVsQR+4Ih/7VfiOpMRm6DpnNNG9yfcdtusvmPoXrxdvp/vzlKrg"></script><script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/highstock.js"></script>
+    <script src="/js/highcharts.theme.js"></script>
+    <script src="/js/moment-with-locales.min.js"></script>
+    <script src="/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/js/pancernik.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><i class="icon-pancernik"></i> Statystyki</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Statystyki</a>
+                    </li>
+                    <li class="active">
+                        <a href="/logs">Archiwum</a>
+                    </li>
+                    <li>
+                        <a href="/karma">Karma</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://pancernik.info">Watch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="page-header">
+                <h3><i class="fa fa-calendar-o"></i> 2021-11-09</h3>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2021-11-08" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2021-11-09/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2021-11-09/7">7</a></li>
+                        <li><a href="/log/2021-11-09/8">8</a></li>
+                        <li><a href="/log/2021-11-09/9">9</a></li>
+                        <li><a href="/log/2021-11-09/10">10</a></li>
+                        <li class="active"><a href="/log/2021-11-09/11">11</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2021-11-10" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered" style="word-wrap: break-word;">
+                    <colgroup>
+                        <col style="width: 73px;">
+                        <col style="width: 188px;">
+                        <col style="width: auto">
+                    </colgroup>
+                    <tbody><tr>
+                      <td class="time"><a href="#3b54c8" id="3b54c8">00:14:19</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>Flashovy, chciałbym być tak sławny Sadge</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#935db1" id="935db1">00:14:16</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Legion331, peepoSad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#84c4d7" id="84c4d7">00:14:14</a></td>
+                      <td colspan="2">Joins: nzero</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c04b06" id="c04b06">00:14:09</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Tłumaczenie: joozek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#66ca7f" id="66ca7f">00:14:06</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>Flashovy, xd nie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bd66e0" id="bd66e0">00:14:03</a></td>
+                      <td colspan="2">Parts: blkkts</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8cf101" id="8cf101">00:13:59</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Legion331, EJ, TO TY ROBISZ TŁUMACZENIA FILMÓW CO PUSZCZAJĄ NA BIEDACZCIE? POGGERS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aa7cb6" id="aa7cb6">00:13:58</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>Jestem spokojny, to tylko żarty peepoBlanket doktorant</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6ce170" id="6ce170">00:13:52</a></td>
+                      <td colspan="2">Parts: bltzkrg22</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bc5af9" id="bc5af9">00:13:49</a></td>
+                      <td class="text-right"><strong>kazek</strong></td>
+                      <td>JAK ŚWIĄTECZNIE POGGERS <a href="https://giant.gfycat.com/DependentSizzlingJabiru.webm" target="_blank">https://giant.gfycat.com/DependentSizzlingJabiru.webm</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2d37a6" id="2d37a6">00:13:27</a></td>
+                      <td class="text-right"><strong>Kosiciel</strong></td>
+                      <td>bresaolka peepoFat </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#64b059" id="64b059">00:13:26</a></td>
+                      <td class="text-right"><strong>rraallff111</strong></td>
+                      <td>Franklin ; Wizyta na białorusi KEKLEO </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#caed44" id="caed44">00:13:12</a></td>
+                      <td class="text-right"><strong>Krul_</strong></td>
+                      <td>peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3d22af" id="3d22af">00:13:11</a></td>
+                      <td class="text-right"><strong>Krul_</strong></td>
+                      <td>i nikt sie nie czepial</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#896c3b" id="896c3b">00:13:06</a></td>
+                      <td class="text-right"><strong>Krul_</strong></td>
+                      <td>zawsze mówie juziek</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2c67f2" id="2c67f2">00:12:58</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>REe no nie wytrzymie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f3d242" id="f3d242">00:12:56</a></td>
+                      <td class="text-right"><strong>Krul_</strong></td>
+                      <td>i co</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#503af9" id="503af9">00:12:47</a></td>
+                      <td class="text-right"><strong>Krul_</strong></td>
+                      <td>a ja znam juzia</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1e23bf" id="1e23bf">00:12:42</a></td>
+                      <td colspan="2">Parts: MrMrowaPL</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#67890f" id="67890f">00:12:36</a></td>
+                      <td colspan="2">Parts: polsat_news</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6a5763" id="6a5763">00:12:34</a></td>
+                      <td colspan="2">Parts: Zucho</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#55d271" id="55d271">00:12:32</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>jÓziu jak już REe</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#66e616" id="66e616">00:12:27</a></td>
+                      <td colspan="2">Parts: yoda415</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#54692d" id="54692d">00:12:23</a></td>
+                      <td colspan="2">Parts: micp</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c262d3" id="c262d3">00:12:16</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>Krul_, REe</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#406f63" id="406f63">00:12:08</a></td>
+                      <td class="text-right"><strong>Krul_</strong></td>
+                      <td>spokojnie juziu nie nerwuj sie peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3410f9" id="3410f9">00:12:03</a></td>
+                      <td colspan="2">Parts: ColdFish</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e42d62" id="e42d62">00:11:54</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Dobra, starczy peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#91fe32" id="91fe32">00:11:48</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>a tu lewacy po wyborach Kappa <a href="https://pobierak.jeja.pl/images/4/d/8/35860_franklin.jpg" target="_blank">https://pobierak.jeja.pl/images/4/d/8/35860_franklin.jpg</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e3fb09" id="e3fb09">00:11:45</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>doktorant, ale z mojego imienia się proszę nie śmiać REe</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#09de31" id="09de31">00:11:25</a></td>
+                      <td class="text-right"><strong>FxK</strong></td>
+                      <td>mase tego franklina zbierałem na działąch pepeW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2e11bf" id="2e11bf">00:11:23</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Kosiciel, peepoHappy </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0f952b" id="0f952b">00:11:19</a></td>
+                      <td class="text-right"><strong>Pancernik</strong></td>
+                      <td>Aktualnie oglądane: <span style="color: lime">biedaczattv2 (10)</span>, doktorant123 (34), Vavarinka (6), TVN24 (4), IndyStarCraft (2) i 2 więcej. <a href="https://pancernik.info" target="_blank">https://pancernik.info</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aa8d6b" id="aa8d6b">00:11:15</a></td>
+                      <td class="text-right"><strong>FxK</strong></td>
+                      <td>Kosiciel, o jezu kurwa frankliny.... az kurwa mi sie przypomina praca w kołchozie pepeW </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9cfe55" id="9cfe55">00:10:48</a></td>
+                      <td colspan="2">Joins: Kusiu07</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c6d52e" id="c6d52e">00:10:36</a></td>
+                      <td colspan="2">Parts: Tiananmen</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1e7887" id="1e7887">00:10:26</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>FxK, gdzie w tym pinokio bo nieogarniam pepeW</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1e7887" id="1e7887">00:10:26</a></td>
+                      <td class="text-right"><strong>Kosiciel</strong></td>
+                      <td><a href="https://i.postimg.cc/qR655gGn/image.png" target="_blank">https://i.postimg.cc/qR655gGn/image.png</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c37850" id="c37850">00:10:18</a></td>
+                      <td colspan="2">Parts: Ligatura</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dda32a" id="dda32a">00:09:58</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>FxK specjalne wykończenie będzie jak od tyłu zajdziesz przeciwnika wtedy Pinokio wsadza nosek w jego odbyt i krzyczy głośno: Komunizm działa REe </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9b6c1e" id="9b6c1e">00:09:52</a></td>
+                      <td colspan="2">Parts: Dekejpsz</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b60acd" id="b60acd">00:08:56</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>Flashovy, monkaS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#66df39" id="66df39">00:08:37</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>na czasie monkaS <a href="https://i1.kwejk.pl/k/obrazki/2021/09/lVTApi4PX47mDgog.jpg" target="_blank">https://i1.kwejk.pl/k/obrazki/2021/09/lVTApi4PX47mDgog.jpg</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c3310e" id="c3310e">00:08:35</a></td>
+                      <td colspan="2">Parts: witam_serdecznie</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#65f032" id="65f032">00:08:33</a></td>
+                      <td colspan="2">Parts: budyniowy_kisiel</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5df807" id="5df807">00:08:30</a></td>
+                      <td colspan="2">Parts: exus1pl</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#85d061" id="85d061">00:08:24</a></td>
+                      <td class="text-right"><strong>exus1pl</strong></td>
+                      <td>policjant, kurde, czyli jego też mogą zabrać Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cb7fc4" id="cb7fc4">00:08:14</a></td>
+                      <td class="text-right"><strong>FxK</strong></td>
+                      <td><a href="https://www.youtube.com/watch?v=q-8ix2pSHrw" target="_blank">https://www.youtube.com/watch?v=q-8ix2pSHrw</a> co to za dziwne soulsy Dafuq</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#690ed1" id="690ed1">00:07:58</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>exus1pl, w centrum monkaS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1fc609" id="1fc609">00:07:49</a></td>
+                      <td class="text-right"><strong>exus1pl</strong></td>
+                      <td>Bo się zastanawiam czy mojego kumpla też wywiozą pod granicę</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#944cf1" id="944cf1">00:07:42</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Pamiętam to Pepega </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#50dddf" id="50dddf">00:07:36</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Mensberk, xDDD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6c69f0" id="6c69f0">00:07:33</a></td>
+                      <td class="text-right"><strong>exus1pl</strong></td>
+                      <td>policjant, a ty normalnie na wschodzie czy na zachodzie kraju stacjonujesz?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d0990b" id="d0990b">00:07:30</a></td>
+                      <td class="text-right"><strong>Mensberk</strong></td>
+                      <td>bonus otwieraj ryyyj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6d925b" id="6d925b">00:07:28</a></td>
+                      <td class="text-right"><strong>Gisio</strong></td>
+                      <td>policjant, najgorzej Feels </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6d925b" id="6d925b">00:07:28</a></td>
+                      <td class="text-right"><strong>Ligatura</strong></td>
+                      <td>policjant, o kurczę...</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b3facf" id="b3facf">00:07:21</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>doktorant, pamiętam, oglądałem peepoLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a4c823" id="a4c823">00:07:20</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>policjant, to prywatną pożycz komuś z czatku skoro wojna idzie peepoHappy </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a4c823" id="a4c823">00:07:20</a></td>
+                      <td class="text-right"><strong>Mensberk</strong></td>
+                      <td><a href="https://www.wykop.pl/cdn/c3201142/comment_1636384355eJzKJAgiV5dpnrUTsAxwt4.jpg" target="_blank">https://www.wykop.pl/cdn/c3201142/comment_1636384355eJzKJAgiV5dpnrUTsAxwt4.jpg</a> o</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#94a762" id="94a762">00:07:07</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>Ligatura, raczej las pod Białorusią monkaS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b2511c" id="b2511c">00:07:00</a></td>
+                      <td class="text-right"><strong>Mensberk</strong></td>
+                      <td>policjant, jakieś świerszczyki </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#154ca6" id="154ca6">00:06:50</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>doktorant, nie mogę prywatnej Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7e26ca" id="7e26ca">00:06:48</a></td>
+                      <td class="text-right"><strong>Zucho</strong></td>
+                      <td>dobranoc czatek peepoBlanket </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#53d877" id="53d877">00:06:44</a></td>
+                      <td class="text-right"><strong>Gisio</strong></td>
+                      <td>doktorant, magazynka nie wzial</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#53d877" id="53d877">00:06:44</a></td>
+                      <td class="text-right"><strong>Ligatura</strong></td>
+                      <td>policjant, jedziesz do Wawy?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#43968d" id="43968d">00:06:43</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>doktorant, długą pobiorę z magazynu peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c05dcb" id="c05dcb">00:06:41</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>policjant, to weź, jakieś dzieci podobno są</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dd34a9" id="dd34a9">00:06:40</a></td>
+                      <td class="text-right"><strong>exus1pl</strong></td>
+                      <td>doktorant, a i zapasowe aku do latarki</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#39b0fc" id="39b0fc">00:06:33</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>policjant, no to jesteś nieprzygotowany peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#fcc11f" id="fcc11f">00:06:32</a></td>
+                      <td class="text-right"><strong>Zucho</strong></td>
+                      <td>doktorant, idę spać. Branoc o7</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d33383" id="d33383">00:06:29</a></td>
+                      <td class="text-right"><strong>Kosiciel</strong></td>
+                      <td>policjant, małpeczki?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a720a0" id="a720a0">00:06:22</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>Flashovy, nie mam peepoWeird </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dcbf7b" id="dcbf7b">00:06:17</a></td>
+                      <td class="text-right"><strong>Krul_</strong></td>
+                      <td>policjant, kabanosy cipsy i batony</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dcbf7b" id="dcbf7b">00:06:17</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>exus1pl, to mam na kamizelce, ale też spakowana PepoG </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f68840" id="f68840">00:06:15</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>policjant, paczka prezerwatyw peepoLaugh </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c6ce43" id="c6ce43">00:06:11</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>exus1pl, staza cut mmm</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#892482" id="892482">00:06:06</a></td>
+                      <td class="text-right"><strong>Bonkol</strong></td>
+                      <td>policjant, dziecko które płacze też macie?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#097fce" id="097fce">00:06:05</a></td>
+                      <td colspan="2">Parts: mcj</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#63120b" id="63120b">00:06:01</a></td>
+                      <td class="text-right"><strong>cbool222</strong></td>
+                      <td>bawił się ktos tutaj więcej z bootsrapem</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#bdc867" id="bdc867">00:05:49</a></td>
+                      <td class="text-right"><strong>exus1pl</strong></td>
+                      <td>policjant, apteczka i staza</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#45a9da" id="45a9da">00:05:31</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>policjant, jak się zapełni musisz iść wysypać do bagażnika, suabo :( za piątym razem będą Cię nogi bolały</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#188f1c" id="188f1c">00:05:30</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>doktorant, spakowałem się już, racje żywnościowe mam, majtasy ciepłe mam, skarpetki mam, flary są, latarka jest PepoG o czymś zapomniałem i nie wiem o czym peepoWTF </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#0f9d85" id="0f9d85">00:05:18</a></td>
+                      <td class="text-right"><strong>cbool222</strong></td>
+                      <td>Eloszka</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#513f52" id="513f52">00:05:13</a></td>
+                      <td class="text-right"><strong>Pancernik</strong></td>
+                      <td>cbool222, Amour Amour</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#513f52" id="513f52">00:05:13</a></td>
+                      <td colspan="2">cbool222 is not banned.</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#513f52" id="513f52">00:05:13</a></td>
+                      <td colspan="2">cbool222 subscribed for 2 months!</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9416d8" id="9416d8">00:05:06</a></td>
+                      <td colspan="2">dachshund.poorchat.net sets mode: +v cbool222</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9416d8" id="9416d8">00:05:06</a></td>
+                      <td colspan="2">dachshund.poorchat.net sets mode: +h cbool222</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9416d8" id="9416d8">00:05:06</a></td>
+                      <td colspan="2">Joins: cbool222</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b011d9" id="b011d9">00:04:56</a></td>
+                      <td class="text-right"><strong>Ligatura</strong></td>
+                      <td>tylko patrzą na Twoje achievemeny naukowe</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a7b6be" id="a7b6be">00:04:53</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Dobre te memy z nim nawet były Kappa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5855f8" id="5855f8">00:04:45</a></td>
+                      <td class="text-right"><strong>Ligatura</strong></td>
+                      <td>oni bez Cb sobie obradują</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#19ba82" id="19ba82">00:04:38</a></td>
+                      <td class="text-right"><strong>Ligatura</strong></td>
+                      <td>teraz nie trzeba przed komisją</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6d00fb" id="6d00fb">00:04:36</a></td>
+                      <td colspan="2">husky.poorchat.net sets mode: +v Krul_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6d00fb" id="6d00fb">00:04:36</a></td>
+                      <td colspan="2">Joins: Krul_</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#be6872" id="be6872">00:04:35</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>Flashovy ++</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ef57ca" id="ef57ca">00:04:22</a></td>
+                      <td colspan="2">Parts: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#407eae" id="407eae">00:04:21</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>Flashovy, ten sam peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#80e7c5" id="80e7c5">00:04:19</a></td>
+                      <td colspan="2">Joins: Azilli</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b7636b" id="b7636b">00:04:18</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td><a href="https://i.pinimg.com/236x/33/1c/c2/331cc2d85e73c87905cd507ffb745daf.jpg" target="_blank">https://i.pinimg.com/236x/33/1c/c2/331cc2d85e73c87905cd507ffb745daf.jpg</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#25fea7" id="25fea7">00:04:03</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>yoda415, tak jest! Taktyk </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#9e603b" id="9e603b">00:04:02</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>policjant, albo kup większy z lublińca na łapówki</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3671bd" id="3671bd">00:03:53</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>właśnie, żółw Franklin xD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e3565b" id="e3565b">00:03:48</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>Tesla? ten od samochodów?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f46da6" id="f46da6">00:03:47</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>skojarzyłem</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b29617" id="b29617">00:03:45</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Fifek, aa kurwa xDDD</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#994ddb" id="994ddb">00:03:43</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>Flashovy, zółw Franklin peepoThink </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#aba496" id="aba496">00:03:40</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>policjant, jak zapełnisz magazynkami rzucaj granaty wojskowych</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#84a9a9" id="84a9a9">00:03:34</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Fifek, co KEKW</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#78d657" id="78d657">00:03:30</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>doktorant Tobie też się rzucają wystarczy "chce Pani 3?"</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#dc91cf" id="dc91cf">00:03:22</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Dobra, czyli Franklin, Edison i Tesla peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#97ad70" id="97ad70">00:03:17</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>Bonkol, ANGERY </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#64a601" id="64a601">00:03:11</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td><a href="https://pl.wikipedia.org/wiki/Benjamin_Franklin#Dzia%C5%82alno%C5%9B%C4%87_naukowa" target="_blank">https://pl.wikipedia.org/wiki/Benjamin_Franklin#Dzia%C5%82alno%C5%9B%C4%87_naukowa</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#64a601" id="64a601">00:03:11</a></td>
+                      <td class="text-right"><strong>policjant</strong></td>
+                      <td>Fifek, <a href="https://imgur.com/a/T0BBfvQ" target="_blank">https://imgur.com/a/T0BBfvQ</a> taki worek jak na zdjęciu zrzutowy mam, ale nie wiem czy by się większy nie przydał </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#64a601" id="64a601">00:03:11</a></td>
+                      <td class="text-right"><strong>Bonkol</strong></td>
+                      <td>w dni usmierci Sadge </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#cad6cf" id="cad6cf">00:03:08</a></td>
+                      <td class="text-right"><strong>Bonkol</strong></td>
+                      <td>Jest</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#e4aab2" id="e4aab2">00:03:02</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>doktorant to tak jak Ty peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#017c36" id="017c36">00:02:52</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>Flashovy, ten żółw co go ten skurwiel bober prześladował monkaS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#55c401" id="55c401">00:02:45</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>KEKW</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#674a04" id="674a04">00:02:38</a></td>
+                      <td colspan="2">Parts: AkiM1223</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#d36ddc" id="d36ddc">00:02:35</a></td>
+                      <td class="text-right"><strong>Ligatura</strong></td>
+                      <td>czy jest jakiś czas w roku, kiedy akurat MujStah nie ma urodzin?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#492e2a" id="492e2a">00:02:34</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td>ale że to ten?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#492e2a" id="492e2a">00:02:34</a></td>
+                      <td colspan="2">Parts: Kasztelan</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#1ef0a6" id="1ef0a6">00:02:30</a></td>
+                      <td class="text-right"><strong>Legion331</strong></td>
+                      <td><a href="https://lh3.googleusercontent.com/proxy/JcXMRjbL6TE0Rl9sOhFqCI0plAC4O5igcBBHrRHo9Br-zn5MO0ZMUxCx-RJFKN5KpHQaBRjdhH5YNefGXp2x8cgJk-iHeK-tHvUg6oJjJRStErmioH50Bkt7g3Hcie6XS8RKXt2NewovvDzvQRk1KK5IRw4FuOne_6qV6ms" target="_blank">https://lh3.googleusercontent.com/proxy/JcXMRjbL6TE0Rl9sOhFqCI0plAC4O5igcBBHrRHo9Br-zn5MO0ZMUxCx-RJFKN5KpHQaBRjdhH5YNefGXp2x8cgJk-iHeK-tHvUg6oJjJRStErmioH50Bkt7g3Hcie6XS8RKXt2NewovvDzvQRk1KK5IRw4FuOne_6qV6ms</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3318de" id="3318de">00:02:27</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>doktorant, ten co w burze puszczał latawce? Kappa</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#148460" id="148460">00:02:23</a></td>
+                      <td class="text-right"><strong>yoda415</strong></td>
+                      <td>doktorant, jak babka była za stara kopał prądem?</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b4e951" id="b4e951">00:02:12</a></td>
+                      <td class="text-right"><strong>pozytrum</strong></td>
+                      <td>R</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2cbc35" id="2cbc35">00:02:00</a></td>
+                      <td class="text-right"><strong>Zucho</strong></td>
+                      <td>MujStach ma dzisiaj urodziny POGGERS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#947c53" id="947c53">00:01:58</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>Fifek, peepoGlad </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7ac63e" id="7ac63e">00:01:56</a></td>
+                      <td class="text-right"><strong>Ligatura</strong></td>
+                      <td>fajny ten dżoker</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#47e2ab" id="47e2ab">00:01:49</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>doktorant, o właśnie peepoHappy </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#7f9b4d" id="7f9b4d">00:01:47</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>Flashovy, Franklin</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#b5aeba" id="b5aeba">00:01:37</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td><a href="https://www.youtube.com/watch?v=7jrp-iGb9u0&amp;ab_channel=Imponderabilia" target="_blank">https://www.youtube.com/watch?v=7jrp-iGb9u0&amp;ab_channel=Imponderabilia</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#5a79d6" id="5a79d6">00:01:30</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td><a href="https://i.imgur.com/69X6dUf.png" target="_blank">https://i.imgur.com/69X6dUf.png</a></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#794468" id="794468">00:01:28</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>Zgadnijcie kto ma dziś urodziny</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#794468" id="794468">00:01:28</a></td>
+                      <td class="text-right"><strong>Flashovy</strong></td>
+                      <td>A jak się nazywał ten co go błyskawica jebnęła, bo się bawił latawcem? peepoThink </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#452c44" id="452c44">00:01:16</a></td>
+                      <td class="text-right"><strong>Ligatura</strong></td>
+                      <td>cześć doktorant </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#f71031" id="f71031">00:01:11</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>Panie Fifek nieeeee</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#2faa49" id="2faa49">00:00:59</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>AkiM1223, Ma Pan dowód?!</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#ff4839" id="ff4839">00:00:47</a></td>
+                      <td colspan="2">Parts: GROMEK_SAN</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c3b459" id="c3b459">00:00:40</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>Fifek, YEP</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#3704ca" id="3704ca">00:00:37</a></td>
+                      <td colspan="2">Joins: Ligatura</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#db0f5b" id="db0f5b">00:00:36</a></td>
+                      <td class="text-right"><strong>AkiM1223</strong></td>
+                      <td>JKM NIE WIEDZIAŁ O 9/11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#6512b1" id="6512b1">00:00:32</a></td>
+                      <td class="text-right"><strong>Fifek</strong></td>
+                      <td>Riper sraradaj? monkaS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#a11ba2" id="a11ba2">00:00:28</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>symboliczna data na atak na polskę</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#437264" id="437264">00:00:27</a></td>
+                      <td class="text-right"><strong>Bonkol</strong></td>
+                      <td>To id epo piwo Kappa </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#c56c31" id="c56c31">00:00:24</a></td>
+                      <td class="text-right"><strong>Aleis12</strong></td>
+                      <td>Karty POGGERS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#8e303d" id="8e303d">00:00:21</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>quasintus9, monkaS </td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#131d6c" id="131d6c">00:00:11</a></td>
+                      <td class="text-right"><strong>quasintus9</strong></td>
+                      <td>ANELE 9/11</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#429d96" id="429d96">00:00:10</a></td>
+                      <td colspan="2">Parts: MARO</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><a href="#22c62a" id="22c62a">00:00:08</a></td>
+                      <td class="text-right"><strong>Riper</strong></td>
+                      <td>Faradaj peepoThink </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div class="row row-margin">
+                <div class="col-lg-2">
+                    <a href="/log/2021-11-08" class="btn btn-lg btn-default"><span class="fa fa-angle-left"></span></a>
+                    </div>
+                <div class="col-lg-8 text-center">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="/log/2021-11-09/1"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a href="/log/2021-11-09/7">7</a></li>
+                        <li><a href="/log/2021-11-09/8">8</a></li>
+                        <li><a href="/log/2021-11-09/9">9</a></li>
+                        <li><a href="/log/2021-11-09/10">10</a></li>
+                        <li class="active"><a href="/log/2021-11-09/11">11</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <a href="/log/2021-11-10" class="btn btn-lg btn-default" id="pushbullet"><span class="fa fa-angle-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="pull-left"></div>
+            <div class="pull-right"><a href="http://tr0l.it/">tr0lit</a> <i class="fa fa-heart"></i> 2022</div>
+            <div class="clearfix"></div> 
+        </div>
+    </div>
+
+
+</body></html>

@@ -1,32 +1,18 @@
-final String tableUserName = 'userName';
-final String columnWeekDay = 'weekDay';
-final String columnTime = 'postTime';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter/foundation.dart';
 
-class Entry {
-   final String userName ;
-   final DateTime weekDay;
-   final DateTime postTime;
+part 'entry.freezed.dart';
 
-   const Entry({required  this.userName, required this.weekDay, required this.postTime});
+part 'entry.g.dart';
 
-  // Entry.fromMap(Map<String, Object?> map){
-  //
-  //   userName = map[tableUserName] as String;
-  //   weekDay = map[columnWeekDay] as DateTime;
-  //   postTime = map[columnTime] as DateTime;
-  //
-  // }
+@freezed
+class Person with _$Person {
+  const factory Person({
+    required String firstName,
+    required String lastName,
+    required int age,
+  }) = _Person;
 
-   Map<String, dynamic> toMap() {
-     return {
-       'userName': userName,
-       'weekDay': weekDay,
-       'postTime': postTime,
-     };
-   }
-
-   @override
-  String toString() {
-    return 'username $userName weekday $weekDay posttime $postTime';
-  }
+  factory Person.fromJson(Map<String, Object?> json)
+  => _$PersonFromJson(json);
 }

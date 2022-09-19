@@ -9,18 +9,23 @@ class DisplayData extends StatelessWidget {
   Widget build(BuildContext context) {
     return ViewModelBuilder<DisplayDataVM>.reactive(
       viewModelBuilder: () => DisplayDataVM(),
-      onModelReady: ((model) async {
-         model.loadedPage = await  model.loadPage();
-         await model.addEntry();
-
-      }),
-      builder: (context, viewModel, child) => SafeArea(child: Scaffold(
-        body: ListView(
-              children: [
-                //Text(viewModel.loadedPage),
-                IconButton(onPressed: () => viewModel.showData(), icon: const Icon(Icons.ice_skating)),
-              ],
-            ),
+      onModelReady: ((model) async {}),
+      builder: (context, viewModel, child) => SafeArea(
+          child: Scaffold(
+        body: Column(
+          children: [
+            IconButton(
+                onPressed: () => viewModel.showData(),
+                icon: const Icon(Icons.ice_skating)),
+            Expanded(
+              child: ListView.builder(
+                itemCount: viewModel.entries?.length,
+                  itemBuilder: (context, int) => ListTile(
+                        title: Text(viewModel.entries?[int].toString() ?? 'empty'),
+                      )),
+            )
+          ],
+        ),
       )),
     );
   }

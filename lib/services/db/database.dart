@@ -11,13 +11,13 @@ class Db {
 
   Future<void> createTable() async {
     await database.execute(
-        'CREATE TABLE Day (id INTEGER PRIMARY KEY, userName TEXT, weekDay Date, postTime Time)');
+        'CREATE TABLE Days (id INTEGER PRIMARY KEY, userName TEXT, weekDay Date, postTime TEXT)');
   }
 
-  Future<void> insertData() async {
+  Future<void> insertData(String name, String weekday, String time, String text) async {
     await database.transaction((txn) async {
       int id1 = await txn.rawInsert(
-          'INSERT INTO Day(userName, weekday, postTime) VALUES("somename", 24-24-20, "20:20:20")');
+          'INSERT INTO Days(userName, weekday, postTime) VALUES($name, $weekday, $time, $text)');
     });
   }
 
@@ -25,9 +25,9 @@ class Db {
     await database.close();
   }
 
-  Future<void> getData() async {
-    List<Map> list = await database.rawQuery('SELECT * FROM Day');
+  Future<List<Map<String, Object?>>>  getData() async {
+    List<Map<String, Object?> > list = await database.rawQuery('SELECT * FROM Day');
 
-    print(list);
+    return list;
   }
 }

@@ -6,13 +6,17 @@ part 'entry.freezed.dart';
 part 'entry.g.dart';
 
 @freezed
-class Person with _$Person {
-  const factory Person({
-    required String firstName,
-    required String lastName,
-    required int age,
-  }) = _Person;
+class Entry with _$Entry {
+  const factory Entry({
+    required int id,
+    required String userName,
+    //todo date\
 
-  factory Person.fromJson(Map<String, Object?> json)
-  => _$PersonFromJson(json);
+    required String weekDay,
+    required String postTime ,
+    required String text ,
+  }) = _Entry;
+
+  factory Entry.fromJson(Map<String, Object?> json)
+  => _$EntryFromJson(json);
 }

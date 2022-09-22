@@ -3,7 +3,9 @@ import 'package:stacked/stacked.dart';
 import 'package:user_profiler/display_data/back/display_data_vm.dart';
 
 class DisplayData extends StatelessWidget {
-  const DisplayData({Key? key}) : super(key: key);
+  DisplayData({Key? key}) : super(key: key);
+
+  ScrollController listScrollController = ScrollController();
 
   @override
   Widget build(BuildContext context) {
@@ -15,14 +17,29 @@ class DisplayData extends StatelessWidget {
         body: Column(
           children: [
             IconButton(
-                onPressed: () => viewModel.showData(),
+                onPressed: () => viewModel.searchPhrase('PEPEGA'),
                 icon: const Icon(Icons.ice_skating)),
+            TextButton(
+                onPressed: () => viewModel.printData(),
+                child: const Text('print data to log')),
+            TextButton(
+                onPressed: () {
+                  if (listScrollController.hasClients) {
+                    final position =
+                        listScrollController.position.maxScrollExtent;
+                    listScrollController.jumpTo(position);
+                  }
+                },
+                child: const Text('scroll')),
             Expanded(
-              child: ListView.builder(
-                itemCount: viewModel.entries?.length,
-                  itemBuilder: (context, int) => ListTile(
-                        title: Text(viewModel.entries?[int].toString() ?? 'empty'),
-                      )),
+              child: viewModel.entries.isNotEmpty
+                  ? ListView.builder(
+                      controller: listScrollController,
+                      itemCount: viewModel.entries.length,
+                      itemBuilder: (context, int) => ListTile(
+                            title: Text(viewModel.entries[int].toString()),
+                          ))
+                  : Container(),
             )
           ],
         ),

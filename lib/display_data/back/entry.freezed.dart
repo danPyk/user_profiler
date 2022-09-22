@@ -14,167 +14,210 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-Person _$PersonFromJson(Map<String, dynamic> json) {
-  return _Person.fromJson(json);
+Entry _$EntryFromJson(Map<String, dynamic> json) {
+  return _Entry.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Person {
-  String get firstName => throw _privateConstructorUsedError;
-  String get lastName => throw _privateConstructorUsedError;
-  int get age => throw _privateConstructorUsedError;
+mixin _$Entry {
+  int get id => throw _privateConstructorUsedError;
+  String get userName => throw _privateConstructorUsedError; //todo date\
+  String get weekDay => throw _privateConstructorUsedError;
+  String get postTime => throw _privateConstructorUsedError;
+  String get text => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $PersonCopyWith<Person> get copyWith => throw _privateConstructorUsedError;
+  $EntryCopyWith<Entry> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PersonCopyWith<$Res> {
-  factory $PersonCopyWith(Person value, $Res Function(Person) then) =
-      _$PersonCopyWithImpl<$Res>;
-  $Res call({String firstName, String lastName, int age});
+abstract class $EntryCopyWith<$Res> {
+  factory $EntryCopyWith(Entry value, $Res Function(Entry) then) =
+      _$EntryCopyWithImpl<$Res>;
+  $Res call(
+      {int id, String userName, String weekDay, String postTime, String text});
 }
 
 /// @nodoc
-class _$PersonCopyWithImpl<$Res> implements $PersonCopyWith<$Res> {
-  _$PersonCopyWithImpl(this._value, this._then);
+class _$EntryCopyWithImpl<$Res> implements $EntryCopyWith<$Res> {
+  _$EntryCopyWithImpl(this._value, this._then);
 
-  final Person _value;
+  final Entry _value;
   // ignore: unused_field
-  final $Res Function(Person) _then;
+  final $Res Function(Entry) _then;
 
   @override
   $Res call({
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? age = freezed,
+    Object? id = freezed,
+    Object? userName = freezed,
+    Object? weekDay = freezed,
+    Object? postTime = freezed,
+    Object? text = freezed,
   }) {
     return _then(_value.copyWith(
-      firstName: firstName == freezed
-          ? _value.firstName
-          : firstName // ignore: cast_nullable_to_non_nullable
-              as String,
-      lastName: lastName == freezed
-          ? _value.lastName
-          : lastName // ignore: cast_nullable_to_non_nullable
-              as String,
-      age: age == freezed
-          ? _value.age
-          : age // ignore: cast_nullable_to_non_nullable
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
               as int,
+      userName: userName == freezed
+          ? _value.userName
+          : userName // ignore: cast_nullable_to_non_nullable
+              as String,
+      weekDay: weekDay == freezed
+          ? _value.weekDay
+          : weekDay // ignore: cast_nullable_to_non_nullable
+              as String,
+      postTime: postTime == freezed
+          ? _value.postTime
+          : postTime // ignore: cast_nullable_to_non_nullable
+              as String,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$$_PersonCopyWith<$Res> implements $PersonCopyWith<$Res> {
-  factory _$$_PersonCopyWith(_$_Person value, $Res Function(_$_Person) then) =
-      __$$_PersonCopyWithImpl<$Res>;
+abstract class _$$_EntryCopyWith<$Res> implements $EntryCopyWith<$Res> {
+  factory _$$_EntryCopyWith(_$_Entry value, $Res Function(_$_Entry) then) =
+      __$$_EntryCopyWithImpl<$Res>;
   @override
-  $Res call({String firstName, String lastName, int age});
+  $Res call(
+      {int id, String userName, String weekDay, String postTime, String text});
 }
 
 /// @nodoc
-class __$$_PersonCopyWithImpl<$Res> extends _$PersonCopyWithImpl<$Res>
-    implements _$$_PersonCopyWith<$Res> {
-  __$$_PersonCopyWithImpl(_$_Person _value, $Res Function(_$_Person) _then)
-      : super(_value, (v) => _then(v as _$_Person));
+class __$$_EntryCopyWithImpl<$Res> extends _$EntryCopyWithImpl<$Res>
+    implements _$$_EntryCopyWith<$Res> {
+  __$$_EntryCopyWithImpl(_$_Entry _value, $Res Function(_$_Entry) _then)
+      : super(_value, (v) => _then(v as _$_Entry));
 
   @override
-  _$_Person get _value => super._value as _$_Person;
+  _$_Entry get _value => super._value as _$_Entry;
 
   @override
   $Res call({
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? age = freezed,
+    Object? id = freezed,
+    Object? userName = freezed,
+    Object? weekDay = freezed,
+    Object? postTime = freezed,
+    Object? text = freezed,
   }) {
-    return _then(_$_Person(
-      firstName: firstName == freezed
-          ? _value.firstName
-          : firstName // ignore: cast_nullable_to_non_nullable
-              as String,
-      lastName: lastName == freezed
-          ? _value.lastName
-          : lastName // ignore: cast_nullable_to_non_nullable
-              as String,
-      age: age == freezed
-          ? _value.age
-          : age // ignore: cast_nullable_to_non_nullable
+    return _then(_$_Entry(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
               as int,
+      userName: userName == freezed
+          ? _value.userName
+          : userName // ignore: cast_nullable_to_non_nullable
+              as String,
+      weekDay: weekDay == freezed
+          ? _value.weekDay
+          : weekDay // ignore: cast_nullable_to_non_nullable
+              as String,
+      postTime: postTime == freezed
+          ? _value.postTime
+          : postTime // ignore: cast_nullable_to_non_nullable
+              as String,
+      text: text == freezed
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_Person implements _Person {
-  const _$_Person(
-      {required this.firstName, required this.lastName, required this.age});
+class _$_Entry implements _Entry {
+  const _$_Entry(
+      {required this.id,
+      required this.userName,
+      required this.weekDay,
+      required this.postTime,
+      required this.text});
 
-  factory _$_Person.fromJson(Map<String, dynamic> json) =>
-      _$$_PersonFromJson(json);
+  factory _$_Entry.fromJson(Map<String, dynamic> json) =>
+      _$$_EntryFromJson(json);
 
   @override
-  final String firstName;
+  final int id;
   @override
-  final String lastName;
+  final String userName;
+//todo date\
   @override
-  final int age;
+  final String weekDay;
+  @override
+  final String postTime;
+  @override
+  final String text;
 
   @override
   String toString() {
-    return 'Person(firstName: $firstName, lastName: $lastName, age: $age)';
+    return 'Entry(id: $id, userName: $userName, weekDay: $weekDay, postTime: $postTime, text: $text)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Person &&
-            const DeepCollectionEquality().equals(other.firstName, firstName) &&
-            const DeepCollectionEquality().equals(other.lastName, lastName) &&
-            const DeepCollectionEquality().equals(other.age, age));
+            other is _$_Entry &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.userName, userName) &&
+            const DeepCollectionEquality().equals(other.weekDay, weekDay) &&
+            const DeepCollectionEquality().equals(other.postTime, postTime) &&
+            const DeepCollectionEquality().equals(other.text, text));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(firstName),
-      const DeepCollectionEquality().hash(lastName),
-      const DeepCollectionEquality().hash(age));
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(userName),
+      const DeepCollectionEquality().hash(weekDay),
+      const DeepCollectionEquality().hash(postTime),
+      const DeepCollectionEquality().hash(text));
 
   @JsonKey(ignore: true)
   @override
-  _$$_PersonCopyWith<_$_Person> get copyWith =>
-      __$$_PersonCopyWithImpl<_$_Person>(this, _$identity);
+  _$$_EntryCopyWith<_$_Entry> get copyWith =>
+      __$$_EntryCopyWithImpl<_$_Entry>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PersonToJson(
+    return _$$_EntryToJson(
       this,
     );
   }
 }
 
-abstract class _Person implements Person {
-  const factory _Person(
-      {required final String firstName,
-      required final String lastName,
-      required final int age}) = _$_Person;
+abstract class _Entry implements Entry {
+  const factory _Entry(
+      {required final int id,
+      required final String userName,
+      required final String weekDay,
+      required final String postTime,
+      required final String text}) = _$_Entry;
 
-  factory _Person.fromJson(Map<String, dynamic> json) = _$_Person.fromJson;
+  factory _Entry.fromJson(Map<String, dynamic> json) = _$_Entry.fromJson;
 
   @override
-  String get firstName;
+  int get id;
   @override
-  String get lastName;
+  String get userName;
+  @override //todo date\
+  String get weekDay;
   @override
-  int get age;
+  String get postTime;
+  @override
+  String get text;
   @override
   @JsonKey(ignore: true)
-  _$$_PersonCopyWith<_$_Person> get copyWith =>
+  _$$_EntryCopyWith<_$_Entry> get copyWith =>
       throw _privateConstructorUsedError;
 }
